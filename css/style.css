@@ -1,9 +1,9 @@
 /*google fonts support*/
-@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap");
 
-@font-face{
-	font-family: pitch;
-	src: url(../fonts/pitchDisplay.ttf);
+@font-face {
+  font-family: pitch;
+  src: url(../fonts/pitchDisplay.ttf);
 }
 /*=================================
 ------- TABLE OF CONTENT-----------
@@ -16,24 +16,23 @@
 
 ==================================*/
 
-
 /*=================================
 			common css
 ===================================*/
 
 *,
 *::after,
-*::before{
-	margin: 0;
-	padding: 0;
-	outline: 0;
-	box-sizing: border-box;
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
 a,
-a:hover{
-	display: inline-block;
-	text-decoration: none;
+a:hover {
+  display: inline-block;
+  text-decoration: none;
 }
 
 p,
@@ -42,452 +41,438 @@ h2,
 h3,
 h4,
 h5,
-h6{
-	margin: 0;
-	padding: 0;
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
-ul,ol{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	line-height: 0;
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
 }
 
-.list-group-item:last-child{
-	border-radius: 0;
-	
+.list-group-item:last-child {
+  border-radius: 0;
 }
 
-span{
-	display: inline-block;
+span {
+  display: inline-block;
 }
 
 input,
 button,
 input:focus,
 input:hover,
-button:hover{
-	outline: 0;
-	box-shadow: 0 0 0 0 transparent;
-	border-radius: 0;
-	margin: 0;
-	padding: 0;
+button:hover {
+  outline: 0;
+  box-shadow: 0 0 0 0 transparent;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.form-control:focus{
-	box-shadow: none !important;
+.form-control:focus {
+  box-shadow: none !important;
 }
 
 /*=================================
 		 header top css
 ===================================*/
-.header_top{
-	font-family: 'Arimo',sans-serif;
-	font-weight: 400;
-	background: #1fbfee;
-	color: #fff;
-	padding: 8px;
+.header_top {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  background: #1fbfee;
+  color: #fff;
+  padding: 8px;
 }
 
-.header_top h3,li{
-	font-size: 16px;
-	padding: 8px 0;
+.header_top h3,
+li {
+  font-size: 16px;
+  padding: 8px 0;
 }
 
-.header_top ul li{
-	display: inline-block;
+.header_top ul li {
+  display: inline-block;
 }
 
-.header_top ul li span{
-	padding-right: 10px;
+.header_top ul li span {
+  padding-right: 10px;
 }
 
-.header_top ul li:first-child{
-	padding-right: 20px;
-	border-right: 1px solid #4cccf1;
+.header_top ul li:first-child {
+  padding-right: 20px;
+  border-right: 1px solid #4cccf1;
 }
 
-.header_top ul li:last-child{
-	padding-left: 20px;
+.header_top ul li:last-child {
+  padding-left: 20px;
 }
-
 
 /*=================================
 		 navigation css
 ===================================*/
 
-.navigation_part{
-	padding: 20px 0;
-	font-family: 'Arimo',sans-serif;
-	font-weight: 400;
+.navigation_part {
+  padding: 20px 0;
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
 }
 
-.navigation_part ul li{
-	display: inline-block;
+.navigation_part ul li {
+  display: inline-block;
 }
 
-.nav_logo{
-	display: flex;
-	flex-direction: column-reverse;
-	justify-content: center;
-	height: 100%;
+.nav_logo {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  height: 100%;
 }
 
-
-#menu_btn{
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 50px;
-	font-size: 16px;
-	color: #27bcf9;
-	border: 1px solid #dcdcdc;
-	transition: .2s;
-	cursor: pointer;
+#menu_btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  color: #27bcf9;
+  border: 1px solid #dcdcdc;
+  transition: 0.2s;
+  cursor: pointer;
 }
-#menu_btn:hover{
-	background: #27bcf9;
-	color: #fff;
-	border-color: #27bcf9;
-}
-
-#signIn_btn{
-	font-size: 18px;
-	padding: 22px 30px;
-	color: #0774ca;
-	border-radius: 28px;
-	box-shadow: 0 10px 40px rgba(0,0,0,.1); 
-	margin-right: 20px;
-	transition: .2s;
+#menu_btn:hover {
+  background: #27bcf9;
+  color: #fff;
+  border-color: #27bcf9;
 }
 
-#signIn_btn:hover{
-	box-shadow: 0 0 40px rgba(0,0,0,.1); 
-	background: #0774ca;
-	color: #fff;
+#signIn_btn {
+  font-size: 18px;
+  padding: 22px 30px;
+  color: #0774ca;
+  border-radius: 28px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  transition: 0.2s;
 }
 
-.nav_logo a{
-	width: 55px;
-	position: relative;
-	left: 8px;
-	margin: 0 auto;
-	transform: translateY(20px);
+#signIn_btn:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  background: #0774ca;
+  color: #fff;
 }
 
-.logo_shape{
-	width: 150px;
-	height: 35px;
-	position: absolute;
-	top: 85px;
-	left: 50%;
-	transform: translateX(-50%);
-	
+.nav_logo a {
+  width: 55px;
+  position: relative;
+  left: 8px;
+  margin: 0 auto;
+  transform: translateY(20px);
 }
 
-.logo_shape img{
-	width: 100%;
+.logo_shape {
+  width: 150px;
+  height: 35px;
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+.logo_shape img {
+  width: 100%;
+}
 
 /*=================================
 		 banner part css
 ===================================*/
 
-.banner_part{
-	padding: 180px 0;
-	background: url(../images/banner_bg.jpg)no-repeat center;
-	background-size: cover;
+.banner_part {
+  padding: 180px 0;
+  background: url(../images/banner_bg.jpg) no-repeat center;
+  background-size: cover;
 }
 
-.banner_part .container{
-	padding: 18px;
-	background: rgba(239, 239, 239,.7);
-	border-radius: 5px;
+.banner_part .container {
+  padding: 18px;
+  background: rgba(239, 239, 239, 0.7);
+  border-radius: 5px;
 }
 
-.banner_content{
-	background: #fff;
-	border-radius: 5px;
+.banner_content {
+  background: #fff;
+  border-radius: 5px;
 }
 
-.banner_input_content{
-	padding: 20px 30px;
+.banner_input_content {
+  padding: 20px 30px;
 }
 
-.banner_continue_btn{
-	text-align: center;
-	padding: 15px 0;
-	display: block;
-	background: linear-gradient(to right, #1cc3f0, #0994e8);
-	color: #fff;
-	font-size: 18px;
-	font-family: 'Arimo',sans-serif;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+.banner_continue_btn {
+  text-align: center;
+  padding: 15px 0;
+  display: block;
+  background: linear-gradient(to right, #1cc3f0, #0994e8);
+  color: #fff;
+  font-size: 18px;
+  font-family: "Arimo", sans-serif;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-.banner_continue_btn:hover{
-	display: block;
-	color: #fff;
+.banner_continue_btn:hover {
+  display: block;
+  color: #fff;
 }
 
-.banner_continue_btn span{
-	transition: all linear .2s;
+.banner_continue_btn span {
+  transition: all linear 0.2s;
 }
 
-.banner_continue_btn span:first-child{
-	transform: translateX(30px);
+.banner_continue_btn span:first-child {
+  transform: translateX(30px);
 }
 
-.banner_continue_btn span:last-child{
-	transform: translateY(2px);
-	margin-left: 10px;
-	opacity: 0;
+.banner_continue_btn span:last-child {
+  transform: translateY(2px);
+  margin-left: 10px;
+  opacity: 0;
 }
 
-.banner_continue_btn:hover span:first-child{
-	transform: translateX(0);
+.banner_continue_btn:hover span:first-child {
+  transform: translateX(0);
 }
-.banner_continue_btn:hover span:last-child{
-	opacity: 1;
-	margin-left: 0px;
-	
-}
-
-.banner_part .bselect-active{
-	border-color: #ddd;
-	font-family: 'Arimo',sans-serif;
-	color: #999;
-	font-size: 16px;
-	padding: 5px 0 5px 40px;
-	user-select: none;
-	background: transparent;
+.banner_continue_btn:hover span:last-child {
+  opacity: 1;
+  margin-left: 0px;
 }
 
-.banner_part .bselect-active:after{
-	    position: absolute;
-    content: "";
-    top: 41%;
-    right: 14px;
-    width: 10px;
-    height: 10px;
-    border: 1px solid transparent;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    transform: rotate(-45deg) translateY(-50%);
+.banner_part .bselect-active {
+  border-color: #ddd;
+  font-family: "Arimo", sans-serif;
+  color: #999;
+  font-size: 16px;
+  padding: 5px 0 5px 40px;
+  user-select: none;
+  background: transparent;
 }
 
-.banner_part .bselect-list li{
-	padding: 10px 15px;
-	font-family: 'Arimo',sans-serif;
-	font-size: 16px;
-	color: #999;
+.banner_part .bselect-active:after {
+  position: absolute;
+  content: "";
+  top: 41%;
+  right: 14px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid transparent;
+  border-left-color: #999;
+  border-bottom-color: #999;
+  transform: rotate(-45deg) translateY(-50%);
 }
 
-.banner_part .bselect-list li:hover{
-	background: #10a4eb;
-	color: #fff;
-
+.banner_part .bselect-list li {
+  padding: 10px 15px;
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  color: #999;
 }
 
-.banner_part .bselect-list li:not(:first-child){
-	border-top: 1px solid #ddd;
-	border-left-color: transparent;
-	border-right-color: transparent;
+.banner_part .bselect-list li:hover {
+  background: #10a4eb;
+  color: #fff;
 }
 
-.banner_part .bselect-list{
-	max-height: 300px;
+.banner_part .bselect-list li:not(:first-child) {
+  border-top: 1px solid #ddd;
+  border-left-color: transparent;
+  border-right-color: transparent;
 }
 
-.banner_part ul li{
-	position: relative;
+.banner_part .bselect-list {
+  max-height: 300px;
+}
+
+.banner_part ul li {
+  position: relative;
 }
 
 .banner_part ul li .location_icon {
-    position: absolute;
-    top: 9px;
-    left: 6px;
-    border-right: 1px solid #ddd;
-    height: 48px;
-    line-height: 48px;
-    padding-right: 10px;
-	padding-left: 2px;
-    font-size: 20px;
-	color: #53d4f7;
+  position: absolute;
+  top: 9px;
+  left: 6px;
+  border-right: 1px solid #ddd;
+  height: 48px;
+  line-height: 48px;
+  padding-right: 10px;
+  padding-left: 2px;
+  font-size: 20px;
+  color: #53d4f7;
 }
 
-.banner_part .form-control{
-	font-size: 16px;
-    color: #999;
-    font-family: 'Arimo',sans-serif;
-    padding: 12px 50px;
-    height: auto;
-    border-radius: 5px;
+.banner_part .form-control {
+  font-size: 16px;
+  color: #999;
+  font-family: "Arimo", sans-serif;
+  padding: 12px 50px;
+  height: auto;
+  border-radius: 5px;
 }
 
-.banner_part .form-control:focus{
-	border:1px solid #ddd;
+.banner_part .form-control:focus {
+  border: 1px solid #ddd;
 }
-
-
 
 /*=================================
 		 fleet part css
 ===================================*/
-.fleet_part{
-	font-family: 'Arimo',sans-serif;
-	padding-bottom: 100px;
+.fleet_part {
+  font-family: "Arimo", sans-serif;
+  padding-bottom: 100px;
 }
 
-.fleet_sidebar{
-	background: #f5f5f5;
+.fleet_sidebar {
+  background: #f5f5f5;
 }
 
-.fleet_part .list-group-item{
-	padding: 0;
-	background: transparent;
-	border: 0;
-	border-radius: 0;
-	font-size: 16px;
-	padding: 15px 45px;
-	color: #222;
-	font-style: italic;
+.fleet_part .list-group-item {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 15px 45px;
+  color: #222;
+  font-style: italic;
 }
 
-.fleet_part .list-group-item:nth-child(odd){
-	background: #eee;
+.fleet_part .list-group-item:nth-child(odd) {
+  background: #eee;
 }
 
-.fleet_part .list-group-item:first-child{
-	border-radius: 0;
+.fleet_part .list-group-item:first-child {
+  border-radius: 0;
 }
 
-.fleet_part .list-group-item-action.active{
-	background: #1cc3f0;
-	color: #fff;
+.fleet_part .list-group-item-action.active {
+  background: #1cc3f0;
+  color: #fff;
 }
 
-.flet_title{
-	padding: 100px 0 30px 0;
+.flet_title {
+  padding: 100px 0 30px 0;
 }
 
-.flet_title h2{
-	text-align: right;
-	font-family: 'Arimo',sans-serif;
-	font-weight: bold;
-	font-style: italic;
-	font-size: 38px;
-	color: #1cc3f0;
-	transform: translateX(113px);
-	position: relative;
+.flet_title h2 {
+  text-align: right;
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 38px;
+  color: #1cc3f0;
+  transform: translateX(113px);
+  position: relative;
 }
-.flet_title h2::after{
-	    height: 8px;
-    width: 228px;
-    position: absolute;
-    top: 12px;
-    background: #f0f0f0;
-    transform: skewX(-20deg);
-    content: '';
-    right: 179px;
-}
-
-.flet_title h2::before{
-    height: 8px;
-    width: 228px;
-    position: absolute;
-    top: 22px;
-    background: #f0f0f0;
-    transform: skewX(-20deg);
-    content: '';
-    right: 183px;
-
+.flet_title h2::after {
+  height: 8px;
+  width: 228px;
+  position: absolute;
+  top: 12px;
+  background: #f0f0f0;
+  transform: skewX(-20deg);
+  content: "";
+  right: 179px;
 }
 
-.fleet_part .tab-content{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-	position: relative;
-	z-index: 99;
+.flet_title h2::before {
+  height: 8px;
+  width: 228px;
+  position: absolute;
+  top: 22px;
+  background: #f0f0f0;
+  transform: skewX(-20deg);
+  content: "";
+  right: 183px;
 }
 
-.fleet_car .car_image{
-	width: 637px;
-    padding: 10px;
-    transform: translate(-120px , 80px);
+.fleet_part .tab-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 99;
 }
 
-
-.fleet_car .car_image img{
-	width: 100%;
-}
-.fleet_car{
-	position: relative;
-}
-.eightSeater::after{
-	position: absolute;
-    content: '';
-    width: 270px;
-    height: 90px;
-    background: url(../images/8seaterTitle.png)no-repeat center;
-	background-size: cover;
-    left: 120px;
-    top: -52px;
-    z-index: -1;
-
-	
+.fleet_car .car_image {
+  width: 637px;
+  padding: 10px;
+  transform: translate(-120px, 80px);
 }
 
-.fleet_car .car_info{
-	padding-bottom: 15px;
-	width: 300px;
-	position: absolute;
-	right: 0;
-	bottom: 0;
+.fleet_car .car_image img {
+  width: 100%;
+}
+.fleet_car {
+  position: relative;
+}
+.eightSeater::after {
+  position: absolute;
+  content: "";
+  width: 270px;
+  height: 90px;
+  background: url(../images/8seaterTitle.png) no-repeat center;
+  background-size: cover;
+  left: 120px;
+  top: -52px;
+  z-index: -1;
 }
 
-.car_info ul li{
-	width: 280px;
-	height: 50px;
-	background: #fff;
-	box-shadow: 0 0  20px rgba(0,0,0,.1);
-	line-height: 50px;
-	padding: 0;
-	margin: 0 0 0 auto;
-	transform: skewX(-12deg);
-	overflow: hidden;
-}
-.car_info ul li span{
-	vertical-align: middle;
+.fleet_car .car_info {
+  padding-bottom: 15px;
+  width: 300px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-.car_info ul li span:first-child{
-	background: #1cbde8;
-    padding-right: 18px;
-    color: #fff;
-    font-size: 28px;
-    width: 74px;
-    transform: skewX(12deg) translateX(-11px);
-    clip-path: polygon(0 0, 100% 0, 84% 100%, 0 100%);
-    text-align: center;
+.car_info ul li {
+  width: 280px;
+  height: 50px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  line-height: 50px;
+  padding: 0;
+  margin: 0 0 0 auto;
+  transform: skewX(-12deg);
+  overflow: hidden;
+}
+.car_info ul li span {
+  vertical-align: middle;
 }
 
-.car_info ul li span:last-child{
-	font-size: 18px;
-	color: #999;
-	font-family: 'Arimo',sans-serif;
+.car_info ul li span:first-child {
+  background: #1cbde8;
+  padding-right: 18px;
+  color: #fff;
+  font-size: 28px;
+  width: 74px;
+  transform: skewX(12deg) translateX(-11px);
+  clip-path: polygon(0 0, 100% 0, 84% 100%, 0 100%);
+  text-align: center;
 }
 
-.car_info ul li:last-child{
-	margin-top: 15px;
-    margin-right: 16px;
+.car_info ul li span:last-child {
+  font-size: 18px;
+  color: #999;
+  font-family: "Arimo", sans-serif;
 }
 
-
-
+.car_info ul li:last-child {
+  margin-top: 15px;
+  margin-right: 16px;
+}
