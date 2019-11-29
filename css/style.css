@@ -14,7 +14,9 @@
 4. banner part css
 5. fleet part css
 6. marble car css
-
+7. marble car bottom
+8. footer css
+9. copyright css
 ==================================*/
 
 /*=================================
@@ -561,4 +563,47 @@ li {
   color: #444;
   transform: skewX(-12deg) translateX(-29px);
   text-align: justify;
+}
+
+/*=================================
+		 marble car bottom
+===================================*/
+.marble_car_bottom {
+  padding-top: 20px;
+}
+
+/*=================================
+		     footer css
+===================================*/
+
+.footer_part {
+  padding: 50px 0;
+  background: #f5f5f5;
+}
+
+/*=================================
+		     copyright css
+===================================*/
+.copyright {
+  padding: 20px 0;
+  background: #1cc3f0;
+  font-family: "Arimo", sans-serif;
+}
+.copyright .container {
+  max-width: 1600px;
+}
+
+.copyright ul {
+  text-align: center;
+}
+
+.copyright ul li {
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 30px;
+}
+
+.copyright ul li a {
+  color: #fff;
+  font-size: 16px;
 }
