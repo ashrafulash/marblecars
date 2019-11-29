@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Marble Cars</title>
+
+	<!--necessary css files-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/bselect.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="flaticon/flaticon.css">
+	<link rel="stylesheet" href="css/jquery.datepicker2.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+	<!--=========================
+    headeder top start
+===========================-->
+	<section class="header_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h3>Welcome to Marble Cars</h3>
+				</div>
+				<div class="col-lg-6 text-lg-right">
+					<ul>
+						<li><span><i class="fas fa-envelope"></i></span> marblecars@gmail.com</li>
+						<li><span><i class="fas fa-phone-alt"></i></span>+880 1234 567 890</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--=========================
+    headeder top end
+===========================-->
+	<!--=========================
+    navigation start
+===========================-->
+	<nav class="navigation_part">
+		<div class="container">
+			<div class="row justify-content-lg-between">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-3 text-lg-center">
+					<div class="nav_logo">
+						<a href="index.html">
+							<img class="w-100" src="images/logo.png" alt="logo">
+						</a>
+						<div class="logo_shape">
+							<img src="images/logo_shape.png" alt="logo_shape">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 text-lg-right">
+					<div class="nav_btn">
+						<ul>
+							<li>
+								<a id="signIn_btn" href="index.html">Sign in</a>
+							</li>
+							<li>
+								<span id="menu_btn"><i class="fas fa-align-right"></i></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!--=========================
+    navigation end
+===========================-->
+	<!--=========================
+   	 banner part start
+===========================-->
+	<section class="banner_part">
+		<div class="container">
+			<div class="banner_content">
+				<div class="banner_input_content">
+
+					<ul class="row">
+						<li class="col-lg-4">
+							<span class="location_icon"><i class="flaticon-pin"></i></span>
+							<div id="select-box-preselect1"></div>
+						</li>
+						<li class="col-lg-4">
+							<span class="location_icon"><i class="flaticon-find"></i></span>
+							<div id="select-box-preselect2"></div>
+						</li>
+						<li class="col-lg-4">
+							<span class="location_icon"><i class="flaticon-calendar"></i></span>
+							<input type="text" class="form-control" name="date" id="date" data-select="datepicker" placeholder="Date & time">
+						</li>
+					</ul>
+
+				</div>
+				<a href="index.html" class="banner_continue_btn">
+					<span>Continue</span>
+					<span><i class="fas fa-long-arrow-alt-right"></i></span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!--=========================
+   	 banner part end
+===========================-->
+
+
+	<!--=========================
+   	 fleet part start
+===========================-->
+	<section class="fleet_part">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="fleet_sidebar">
+						
+					<div class="flet_title">
+						<h2>Our Fleet</h2>
+					</div>
+
+					<div class="list-group fleet_sidebar" id="list-tab" role="tablist">
+						<div class="list-group fleet_sidebar" id="list-tab" role="tablist">
+							<!--saloon button-->
+							<a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Saloon</a>
+							<!--estate button-->
+							<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Estate</a>
+							<!--MPV button-->
+							<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">MPV</a>
+							<!--8 seater button-->
+							<a class="list-group-item list-group-item-action active" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">8 Seater</a>
+							
+							<!--e-class button-->
+							<a class="list-group-item list-group-item-action" id="list-home-listOne" data-toggle="list" href="#list-homeOne" role="tab" aria-controls="home">E-Class</a>
+							<!--s-class button-->
+							<a class="list-group-item list-group-item-action" id="list-profile-listOne" data-toggle="list" href="#list-profileOne" role="tab" aria-controls="profile">S-Class</a>
+							<!--tesla-model S button-->
+							<a class="list-group-item list-group-item-action" id="list-messages-listOne" data-toggle="list" href="#list-messagesOne" role="tab" aria-controls="messages">Tesla Model S</a>
+							<!--v-class button-->
+							<a class="list-group-item list-group-item-action" id="list-settings-listOne" data-toggle="list" href="#list-settingsOne" role="tab" aria-controls="settings">V-Class</a>
+							
+							
+							
+							
+						</div>
+					</div>
+					
+					</div>
+					
+				</div>
+				
+				
+				<div class="col-lg-9">
+					<div class="tab-content" id="nav-tabContent">
+					<!--Saloon contenet-->
+						<div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+							
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, iure.
+							
+						</div>
+						<!--Estate contenet-->
+						<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+							
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quibusdam distinctio ratione possimus, ducimus minus ut maxime quidem repellendus, assumenda.
+							
+							
+						</div>
+						<!--MPV contenet-->
+						<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+							
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dicta, at iusto ipsam iure sequi cum culpa aliquid similique ullam, quidem nobis tenetur quod optio, blanditiis aspernatur vel ducimus. Voluptatibus?
+							
+						</div>
+						<!--8 Seater contenet-->
+						<div class="tab-pane fade show active" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+							
+							<div class="fleet_car">
+								<div class="car_image eightSeater">
+									<img src="images/8seater.png" alt="car">
+								</div>
+								<div class="car_info">
+									<ul>
+										<li>
+										  <span><i class="flaticon-sit-1"></i></span>
+										  <span>Passenger - 8</span>
+										</li>
+										<li>
+										  <span><i class="flaticon-sit-1"></i></span>
+										  <span>Passenger - 8</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+						<!--E-Class contenet-->
+						<div class="tab-pane fade" id="list-homeOne" role="tabpanel" aria-labelledby="list-home-listOne">
+							
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, iure.
+							
+						</div>
+						<!--S-Class contenet-->
+						<div class="tab-pane fade" id="list-profileOne" role="tabpanel" aria-labelledby="list-profile-listOne">
+							
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quibusdam distinctio ratione possimus, ducimus minus ut maxime quidem repellendus, assumenda.
+							
+							22222
+							
+							
+						</div>
+						<!--Tesla Model S contenet-->
+						<div class="tab-pane fade" id="list-messagesOne" role="tabpanel" aria-labelledby="list-messages-listOne">
+							
+							3333
+							
+						</div>
+						<!--V-Class contenet-->
+						
+						<div class="tab-pane fade" id="list-settingsOne" role="tabpanel" aria-labelledby="list-settings-listOne">
+							
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsam, facilis, dolores facere, pariatur aspernatur nihil soluta excepturi non at iste adipisci numquam in a eum blanditiis molestias laboriosam quod. Voluptatem, quidem. Eum quisquam omnis tempore, id cumque nihil sed, enim ipsa praesentium officia, aliquam obcaecati. Repellendus earum facilis amet.
+							
+						</div>
+						
+						
+						
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!--=========================
+   	 fleet part end
+===========================-->
+
+
+	<!--necessary javascrpt files-->
+	<script src="https://kit.fontawesome.com/5dae415ef9.js" crossorigin="anonymous"></script>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--jquery.min.js is for dropdown selector-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.datepicker2.js"></script>
+	<script src="js/jquery.bselect.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
