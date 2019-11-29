@@ -1,0 +1,120 @@
+@media (max-width: 575.98px) {
+  /* =============================
+     First page Responsive 
+     max-width:  575.98px 
+=============================== */
+  .header_top {
+    text-align: center;
+  }
+  .header_top ul li:first-child {
+    border-right: 0;
+  }
+  .header_top ul li:last-child {
+    padding-left: 0;
+  }
+  .header_top h3,
+  li {
+    padding: 4px 0;
+  }
+  .nav_logo a {
+    transform: translate(0);
+  }
+  .order-0 {
+    order: -1;
+  }
+  .nav_logo {
+    display: unset;
+  }
+  .navigation_part .col-4,
+  .navigation_part .col-1,
+  .navigation_part .col-7 {
+    padding: 0;
+  }
+  .navigation_part .col-1 {
+    display: none;
+  }
+  .logo_shape img {
+    display: none;
+  }
+  .banner_part {
+    padding: 100px 0;
+  }
+  .flet_title h2 {
+    text-align: center;
+    transform: translate(0);
+  }
+  #signIn_btn {
+    margin-right: 16px;
+  }
+  .banner_part .col-lg-4 {
+    padding: 0;
+    margin-top: 10px;
+  }
+  .banner_part ul li .location_icon {
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    border-right: 1px solid #ddd;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 0px;
+    /* padding-left: 2px; */
+    font-size: 19px;
+    color: #53d4f7;
+  }
+  .banner_part .bselect-active::after {
+    display: none;
+  }
+  .banner_part ul li .location_icon i {
+    transform: translateX(-13px);
+    display: inline-block;
+  }
+  .flet_title h2::before,
+  .flet_title h2::after {
+    display: none;
+  }
+  .flet_title {
+    padding: 30px 0 30px 0;
+  }
+  .list-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .fleet_part .list-group-item {
+    width: 50%;
+    border-top: 3px solid #fff;
+    border-right: 2px solid #fff;
+  }
+  .fleet_car .car_image {
+    width: 100%;
+    padding: 10px;
+    transform: translate(-52px, 80px);
+  }
+  .video_part {
+    position: static;
+    width: 100%;
+  }
+  .fleet_car .car_info {
+    padding-bottom: 15px;
+    width: 300px;
+    position: absolute;
+    right: 17px;
+    bottom: -80px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  ...;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  ...;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  ...;
+}
+
+@media (min-width: 1200px) {
+  ...;
+}
