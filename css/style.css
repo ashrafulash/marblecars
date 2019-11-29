@@ -569,7 +569,48 @@ li {
 		 marble car bottom
 ===================================*/
 .marble_car_bottom {
-  padding-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.marble_car_bottom ul li.col-lg-4 {
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  flex: 0 0 29.333333%;
+  margin: 0 15px;
+}
+
+.marble_car_bottom ul li {
+  transform: skewX(-12deg);
+  overflow: hidden;
+}
+
+.marble_car_bottom ul li span {
+  vertical-align: middle;
+  transform: skewX(12deg);
+}
+
+.marble_car_bottom ul li span img {
+  width: 50px;
+}
+
+.marble_car_bottom ul li span:first-child {
+  vertical-align: middle;
+  transform: skewX(12deg);
+  background: #1cc2ef;
+  width: 100px;
+  text-align: center;
+  margin-left: -8px;
+  height: 80px;
+  line-height: 80px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+
+.marble_car_bottom ul li span:last-child {
+  font-size: 20px;
+  color: #999;
+  font-family: "Arimo", sans-serif;
 }
 
 /*=================================
