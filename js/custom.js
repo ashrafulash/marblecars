@@ -55,3 +55,48 @@
     $(".venobox").venobox();
   });
 })();
+
+/*==================================
+  event binding 
+====================================*/
+(function() {
+  $("#menu_btn").click(function() {
+    popUp(true);
+  });
+
+  $("#close_menu").click(function() {
+    popUp(false);
+  });
+
+  //this function to toggle popup
+  function popUp(act) {
+    if (act === true) {
+      $(".sideMenu").css({
+        display: "block"
+      });
+
+      $("body").css({
+        overflow: "hidden"
+      });
+
+      $(".menu_bar").animate({
+        right: "0"
+      });
+    } else if (act === false) {
+      $(".menu_bar").animate(
+        {
+          right: "-300px"
+        },
+        function() {
+          $(".sideMenu").css({
+            display: "none"
+          });
+        }
+      );
+
+      $("body").css({
+        overflow: "auto"
+      });
+    }
+  }
+})();

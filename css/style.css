@@ -17,6 +17,7 @@
 7. marble car bottom
 8. footer css
 9. copyright css
+10.side menu css
 ==================================*/
 
 /*=================================
@@ -679,4 +680,75 @@ li {
 .copyright ul li a {
   color: #fff;
   font-size: 16px;
+}
+
+/*=================================
+		    side menu css
+===================================*/
+
+.sideMenu {
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  display: none;
+}
+
+.menu_bar {
+  width: 300px;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: -300px;
+  background: linear-gradient(to right bottom, #10a4eb, #0041b1);
+  z-index: 999999;
+}
+
+#close_menu {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #10a4eb;
+  color: #fff;
+  border-radius: 50%;
+  border: 0;
+  transform: translate(10px, 10px);
+  cursor: pointer;
+}
+
+#close_menu:hover {
+  background: #fff;
+  color: #0994e8;
+}
+
+#close_menu:focus {
+  box-shadow: 0;
+  outline: 0;
+}
+
+.sideMenu ul {
+  padding: 40px 0px;
+  margin-top: 50px;
+}
+.sideMenu ul li {
+  text-align: right;
+}
+.sideMenu ul li a {
+  padding: 0 70px 0 20px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 20px;
+  font-family: "Arimo", sans-serif;
+  color: #fff;
+  transition: all linear 0.2s;
+}
+
+.sideMenu ul li a:hover {
+  background: #fff;
+  display: block;
+  color: #10a4eb;
+  font-size: 24px;
 }
