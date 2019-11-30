@@ -138,3 +138,27 @@
     }
   }
 })();
+
+/*==================================
+     bar scrolling
+====================================*/
+
+(function() {
+  $(window).scroll(function() {
+    var scrolling = $(document).scrollTop();
+
+    console.log(scrolling);
+
+    if (scrolling > 48) {
+      $(".bar_line").css({
+        background: "#1fbfee",
+        height: scrolling * 1.1
+      });
+    } else {
+      $(".bar_line").css({
+        background: "#1fbfee",
+        height: "18%"
+      });
+    }
+  });
+})();

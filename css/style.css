@@ -1060,12 +1060,104 @@ button:hover {
   color: #444;
   padding-bottom: 15px;
 }
-
+.pos_rel {
+  position: relative;
+}
 .customBar {
   width: 90px;
   height: 450px;
-  background: #eee;
-  position: absolute;
-  top: 0;
+  position: sticky;
+  top: 70px;
   left: 0;
+  text-align: center;
+}
+
+.bar {
+  width: 10px;
+  height: 600px;
+  border: 1px solid #ddd;
+  background: transparent;
+  transform: translate(39px, -130px);
+  border-radius: 18px;
+  z-index: -1;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar_line {
+  width: 101%;
+  height: 18%;
+  background: #1fbfee;
+  z-index: 2;
+  position: absolute;
+  overflow: hidden;
+}
+
+.start_point [class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  margin-left: 0;
+}
+
+.end_point [class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  margin-left: 0;
+}
+.start_point {
+  background: #1fbfee;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 27px;
+  color: #fff;
+  transform: translateY(-20px);
+  position: relative;
+}
+
+.start_point::after {
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  content: "";
+  background: transparent;
+  border: 1px dotted #1fbfee;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.end_point::after {
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  content: "";
+  background: transparent;
+  border: 1px dotted #1fbfee;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.end_point {
+  background: #1fbfee;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 27px;
+  color: #fff;
+  transform: translateY(-20px);
+  position: absolute;
+  top: 421px;
+  left: 14px;
 }
