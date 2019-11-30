@@ -13,6 +13,7 @@
 8. footer css
 9. copyright css
 10.side menu css
+11. second page css
 ==================================*/
 
 /*=================================
@@ -468,6 +469,30 @@ li {
   z-index: -1;
 }
 
+.eClassTitle::after {
+  position: absolute;
+  content: "";
+  width: 270px;
+  height: 90px;
+  background: url(../images/eClassTitle.png) no-repeat center;
+  background-size: cover;
+  left: 120px;
+  top: -52px;
+  z-index: -1;
+}
+
+.sClassTitle::after {
+  position: absolute;
+  content: "";
+  width: 270px;
+  height: 90px;
+  background: url(../images/sClassTitle.png) no-repeat center;
+  background-size: cover;
+  left: 120px;
+  top: -52px;
+  z-index: -1;
+}
+
 .fleet_car .car_info {
   padding-bottom: 15px;
   width: 300px;
@@ -782,4 +807,115 @@ li {
   display: block;
   color: #10a4eb;
   font-size: 22px;
+}
+
+/*=================================
+		    second page css
+===================================*/
+.secondPage_left {
+  background: #fafafa;
+  padding: 100px 0 80px 0;
+  font-family: "Arimo", sans-serif;
+}
+
+.left_location_title li {
+  display: inline-block;
+  width: 48%;
+}
+
+.left_location_title li:last-child {
+  text-align: right;
+}
+
+.left_location_title li h2 {
+  font-size: 26px;
+  color: #444;
+}
+
+.left_location_title li span {
+  font-size: 16px;
+  color: #444;
+  margin-right: -16px;
+}
+
+.left_location_input .bselect-active {
+  border-color: #ddd;
+}
+
+.left_location_input .bselect-default-text {
+  padding-left: 63px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #999;
+  font-size: 16px;
+}
+
+.left_location_input .location_icon {
+  color: #74daf6;
+  border-right: 1px solid #ddd;
+  height: 47px;
+  position: absolute;
+  z-index: 9;
+  top: 9px;
+  line-height: 47px;
+  padding-right: 8px;
+  font-size: 27px;
+}
+
+.left_location_input .location_icon i {
+  display: inline-block;
+  transform: translateX(-4px);
+}
+
+.left_location_input .bselect-active:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 18px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid transparent;
+  border-color: transparent transparent transparent;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  border-left: 0;
+  transform: rotate(45deg);
+}
+
+.bselect-content {
+  z-index: 13;
+}
+
+.left_location_input .form-control {
+  padding-left: 64px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 48px;
+  cursor: pointer;
+  outline: 0;
+  border-color: #ddd;
+  color: #999;
+}
+
+.form-control::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.jquery-datepicker.theme-light {
+  z-index: 999 !important;
+}
+
+#book_return {
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Arimo", sans-serif;
+  font-size: 18px;
+  background: #1fbfee;
+  margin-top: 15px;
+}
+
+.vehicle_part {
+  padding-top: 60px;
 }

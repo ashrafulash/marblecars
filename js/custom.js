@@ -19,9 +19,8 @@
   $("#select-box-preselect1").bselect({
     data: addressList,
     search: false,
-    selected: 2,
     width: "100%",
-    defaultText: "Select..."
+    defaultText: "Pickup Address"
   });
 
   //Destination address
@@ -40,6 +39,45 @@
 
   $("#select-box-preselect2").bselect({
     data: destination,
+    search: false,
+    width: "100%",
+    defaultText: "Destination Address"
+  });
+
+  //Person
+  var person = {
+    1: "Person 01",
+    2: "Person 02",
+    3: "Person 03",
+    4: "Person 04",
+    5: "Person 05",
+    6: "Person 06",
+    7: "Person 07",
+    8: "Person 08"
+  };
+
+  $("#select-box-preselectPerson").bselect({
+    data: person,
+    search: false,
+    selected: 2,
+    width: "100%",
+    defaultText: "Select..."
+  });
+
+  //luggage
+  var luggage = {
+    1: "Luggage 01",
+    2: "Luggage 02",
+    3: "Luggage 03",
+    4: "Luggage 04",
+    5: "Luggage 05",
+    6: "Luggage 06",
+    7: "Luggage 07",
+    8: "Luggage 08"
+  };
+
+  $("#select-box-preselectLuggage").bselect({
+    data: luggage,
     search: false,
     selected: 2,
     width: "100%",
