@@ -1165,7 +1165,6 @@ button:hover {
 /* second page map part */
 
 .sideMap_part {
-  height: 600px;
   background: #fff;
   box-shadow: 0 0 30px rgba(171, 171, 171, 0.05);
   border-radius: 5px;
@@ -1207,4 +1206,58 @@ button:hover {
 }
 .mini_map a.venobox span:hover {
   color: #222;
+}
+
+.list_direction{
+  position: relative;
+}
+
+.list_direction::after{
+  position: absolute;
+  content: '';
+  left: 12px;
+  top: 8px;
+  width: 1px;
+  background: #1fbfee;
+  height: 87%;
+  z-index: 0;
+}
+
+.list_direction li{
+  padding-bottom: 30px;
+}
+.list_direction li h4{
+  font-family: 'Arimo',sans-serif;
+  color: #1fbfee;
+  font-size: 22px;
+  position: relative;
+  z-index: 11;
+}
+
+.list_direction li h4 span{
+  background: #1fbfee;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.list_direction p{
+  font-size: 18px;
+  color: #444;
+  font-family: 'Arimo',sans-serif;
+  margin-left: 41px;
+}
+
+.sm_info{
+  color: #1fbfee;
+  font-size: 18px;
+  margin-right: 22px;
+  float: right;
+}
+.sm_info i{
+  font-size: 16px;
 }
