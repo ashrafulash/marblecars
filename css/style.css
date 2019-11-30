@@ -90,7 +90,7 @@ button:hover {
 }
 
 .header_top h3,
-li {
+.header_top li {
   font-size: 16px;
   padding: 8px 0;
 }
@@ -179,7 +179,7 @@ li {
   width: 150px;
   height: 35px;
   position: absolute;
-  top: 85px;
+  top: 78px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -303,7 +303,7 @@ li {
 
 .banner_part ul li .location_icon {
   position: absolute;
-  top: 9px;
+  top: 1px;
   left: 6px;
   border-right: 1px solid #ddd;
   height: 48px;
@@ -680,7 +680,7 @@ li {
   background: #f5f5f5;
 }
 .footer_part ul li {
-  line-height: 20px;
+  line-height: 30px;
 }
 
 .footer_part ul {
@@ -696,6 +696,10 @@ li {
   position: absolute;
   content: "";
   transform: translateY(-50%);
+}
+
+.footer_part .col-lg-3:last-child ul:after {
+  display: none;
 }
 .footer_part ul li a {
   color: #222;
@@ -818,6 +822,10 @@ li {
   font-family: "Arimo", sans-serif;
 }
 
+.secondPage_left .container {
+  position: relative;
+}
+
 .left_location_title li {
   display: inline-block;
   width: 48%;
@@ -838,6 +846,10 @@ li {
   margin-right: -16px;
 }
 
+.left_location_input li {
+  margin-top: 15px;
+}
+
 .left_location_input .bselect-active {
   border-color: #ddd;
 }
@@ -856,7 +868,7 @@ li {
   height: 47px;
   position: absolute;
   z-index: 9;
-  top: 9px;
+  top: 1px;
   line-height: 47px;
   padding-right: 8px;
   font-size: 27px;
@@ -916,6 +928,144 @@ li {
   margin-top: 15px;
 }
 
+#book_return:hover {
+  background: #0890e6;
+}
+
 .vehicle_part {
   padding-top: 60px;
+}
+
+.vehicle_part ul {
+  position: relative;
+}
+
+.vehicle_part ul::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #ddd;
+  content: "";
+  left: 40%;
+}
+
+.vehicle_part ul::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #ddd;
+  content: "";
+  left: 80%;
+}
+
+.vehicle_part ul {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.vehicle_part ul li {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.vehicle_part .info {
+  border: 0;
+  position: static;
+}
+.vehicle_part .info li {
+  display: block;
+  width: 96% !important;
+  margin: 7px 0;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0;
+  font-family: "Arimo", sans-serif;
+  font-size: 18px;
+  color: #999;
+}
+.vehicle_part [class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  margin-left: 0;
+}
+
+.second-icon {
+  background: #1cbee9;
+  width: 45px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.vehicle_part ul li:nth-child(1) {
+  width: 40%;
+}
+
+.vehicle_part ul li:nth-child(2) {
+  width: 40%;
+}
+
+.vehicle_part ul li:nth-child(3) {
+  width: 18%;
+}
+
+.content-4 {
+  padding: 10px;
+}
+
+.vehicle_part .money {
+  font-size: 30px;
+  color: #222;
+  text-align: center;
+  display: block;
+}
+
+.main:hover {
+  background: #1fbfee;
+}
+
+.main:hover ul:before {
+  background: #44caf0 !important;
+}
+
+.main:hover:after {
+  background: #44caf0;
+}
+
+.main:hover .money {
+  color: #fff;
+}
+
+.main:hover h3 {
+  color: #fff;
+}
+
+.main:hover {
+  box-shadow: 0 10px 20px rgba(68, 202, 240, 0.2);
+  border-color: #44caf0;
+}
+
+.vehicleTitle {
+  font-size: 26px;
+  color: #444;
+  padding-bottom: 15px;
+}
+
+.customBar {
+  width: 90px;
+  height: 450px;
+  background: #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
