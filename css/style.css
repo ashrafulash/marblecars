@@ -493,6 +493,18 @@ button:hover {
   z-index: -1;
 }
 
+.vClassTitle::after {
+  position: absolute;
+  content: "";
+  width: 270px;
+  height: 90px;
+  background: url(../images/vClass_title.png) no-repeat center;
+  background-size: cover;
+  left: 120px;
+  top: -52px;
+  z-index: -1;
+}
+
 .fleet_car .car_info {
   padding-bottom: 15px;
   width: 300px;
@@ -707,13 +719,17 @@ button:hover {
   font-style: italic;
 }
 
+.bbb{
+  border-bottom: 40px solid #fafafa;
+}
+
 .footer_part ul li a:hover {
   color: #2bc5f0;
 }
 
-.footer_part ul li.active a {
+/* .footer_part ul li.active a {
   color: #2bc5f0;
-}
+} */
 
 /*=================================
 		     copyright css
@@ -1005,6 +1021,10 @@ button:hover {
   text-align: center;
   font-size: 20px;
   margin-right: 10px;
+}
+
+.bselect-list li.elipsis{
+  font-size: 16px;
 }
 
 .vehicle_part ul li:nth-child(1) {

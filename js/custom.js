@@ -152,7 +152,7 @@
     if (scrolling > 48) {
       $(".bar_line").css({
         background: "#1fbfee",
-        height: scrolling * 1.1
+        height: scrolling * 0.09 * 9
       });
     } else {
       $(".bar_line").css({
