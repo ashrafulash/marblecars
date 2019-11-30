@@ -1020,7 +1020,7 @@ button:hover {
 }
 
 .content-4 {
-  padding: 10px;
+  padding: 17px 10px;
 }
 
 .vehicle_part .money {
@@ -1260,4 +1260,47 @@ button:hover {
 }
 .sm_info i{
   font-size: 16px;
+}
+
+
+.map_footer h4{
+  font-size: 18px;
+  font-family: 'Arimo',sans-serif;
+  color: #444;
+  text-align: center;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 16px 0;
+  margin-top: 15px;
+}
+
+.map_footer ul li{
+  display: inline-block;
+  width: 48%;
+  color: #222;
+  font-family: 'Arimo',sans-serif;
+}
+
+.map_footer ul li:last-child{
+  text-align: right;
+  margin-top: 15px;
+}
+
+
+.ms{
+  font-size: 18px;
+}
+.mo{
+  font-size: 34px;
+}
+
+.tr{
+  font-size: 16px;
+  color: #999;
+}
+
+.t{
+  color: #222;
+  font-size: 18px;
+  font-family: 'Armo',sans-serif;
 }
