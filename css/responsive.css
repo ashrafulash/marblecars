@@ -61,7 +61,6 @@
     position: absolute;
     top: 0px;
     left: 6px;
-    border-right: 1px solid #ddd;
     height: 46px;
     line-height: 46px;
     padding-right: 0px;
@@ -300,6 +299,9 @@
 .second_page_copy{
   margin-bottom: 80px;
 }
+.left_location_input .location_icon{
+  top: 4px;
+}
 
 }
 
@@ -364,7 +366,6 @@
     position: absolute;
     top: 0px;
     left: 6px;
-    border-right: 1px solid #ddd;
     height: 50px;
     line-height: 50px;
     padding-right: 0px;
@@ -592,6 +593,11 @@
   margin-bottom: 80px;
 }
 
+.left_location_input .location_icon{
+  top: 4px;
+}
+
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -655,7 +661,6 @@
     position: absolute;
     top: 0px;
     left: 6px;
-    border-right: 1px solid #ddd;
     height: 50px;
     line-height: 50px;
     padding-right: 0px;
@@ -823,6 +828,13 @@
 
 .fixedinfo{
   display: none;
+}
+
+.left_location_input .location_icon{
+  top: 4px;
+}
+.left_location_input .bselect-default-text{
+  padding-top: 7px;
 }
 
 

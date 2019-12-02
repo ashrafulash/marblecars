@@ -265,6 +265,7 @@ button:hover {
   background: transparent;
 }
 
+
 .banner_part .bselect-active:after {
   position: absolute;
   content: "";
@@ -276,6 +277,16 @@ button:hover {
   border-left-color: #999;
   border-bottom-color: #999;
   transform: rotate(-45deg) translateY(-50%);
+}
+
+.banner_part .bselect-active:before{
+   position: absolute;
+   left: 45px;
+   background: #ddd;
+   width: 1px;
+   height: 100%;
+   top: 0;
+   content: '';
 }
 
 .banner_part .bselect-list li {
@@ -308,13 +319,16 @@ button:hover {
   position: absolute;
   top: 1px;
   left: 6px;
-  border-right: 1px solid #ddd;
   height: 48px;
   line-height: 48px;
   padding-right: 10px;
   padding-left: 2px;
   font-size: 20px;
   color: #53d4f7;
+}
+
+.banner_part ul li .last_border{
+  border-right: 1px solid #ddd;
 }
 
 .banner_part .form-control {
@@ -325,6 +339,17 @@ button:hover {
   height: auto;
   border-radius: 5px;
   cursor: pointer;
+
+}
+
+.banner_part .form-control::after{
+  position: absolute;
+  left: 45px;
+  top: 0;
+  background: #ddd;
+  width: 1px;
+  height: 100%;
+  content: '';
 }
 
 .banner_part .form-control:focus {
@@ -611,7 +636,7 @@ button:hover {
 
 .video_part .play_btn {
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 50%;
   width: 100px;
   height: 100px;
@@ -884,7 +909,7 @@ button:hover {
 .left_location_input .location_icon {
   color: #74daf6;
   border-right: 1px solid #ddd;
-  height: 47px;
+  height: 48px;
   position: absolute;
   z-index: 9;
   top: 1px;
@@ -926,7 +951,7 @@ button:hover {
   padding-left: 64px;
   padding-top: 8px;
   padding-bottom: 8px;
-  height: 48px;
+  height: 49px;
   cursor: pointer;
   outline: 0;
   border-color: #ddd;
