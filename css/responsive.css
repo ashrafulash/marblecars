@@ -8,6 +8,7 @@
   }
   .header_top ul li:first-child {
     border-right: 0;
+    padding: 2px 0;
   }
   .header_top ul li:last-child {
     padding-left: 0;
@@ -187,6 +188,81 @@
     line-height: 23px;
     border-bottom: 1px solid aliceblue;
   }
+  /* =============================
+     Second page Responsive 
+     max-width:  575.98px 
+=============================== */
+ .customBar{
+   display: none;
+ }
+
+ .secondPage_left {
+	background: #fafafa;
+	padding: 17px 0 80px 0;
+	font-family: "Arimo", sans-serif;
+}
+
+.secondPage_left{
+  position: relative;
+  z-index: 99;
+}
+
+.vehicle_part ul::after{
+   display: none;
+}
+
+
+.vehicle_part ul::before{
+  display: none;
+}
+.content-4 {
+	padding: 2px 10px;
+}
+
+.vehicle_part ul li:nth-child(3) {
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.sideMap_part {
+	background: #fff;
+	box-shadow: 0 0 30px rgba(171, 171, 171, 0.05);
+	border-radius: 5px;
+	padding: 12px;
+	margin-top: 34px;
+}
+
+.mini_map a.venobox{
+  height: 250px;
+}
+.secondPage_left {
+	background: #fafafa;
+	padding: 17px 0 17px 0;
+	font-family: "Arimo", sans-serif;
+}
+.footer_part {
+	padding: 18px 0;
+	font-family: "Arimo", sans-serif;
+	background: #f5f5f5;
+}
+.marble_car_bottom {
+	padding-top: 40px;
+	padding-bottom: 53px;
+}
+
+
+.vehicle_part ul li{
+  display: block;
+  width: 100%;
+}
+.vehicle_part ul li:first-child{
+  width: 100%;
+}
+
+.vehicle_part ul li:nth-child(2){
+  width: 100%;
+}
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -380,6 +456,72 @@
     line-height: 23px;
     border-bottom: 1px solid aliceblue;
   }
+   /* =============================
+     Second page Responsive 
+     max-width:  575.98px 
+=============================== */
+ .customBar{
+  display: none;
+}
+
+.secondPage_left {
+ background: #fafafa;
+ padding: 17px 0 80px 0;
+ font-family: "Arimo", sans-serif;
+}
+
+.secondPage_left{
+ position: relative;
+ z-index: 99;
+}
+
+.vehicle_part ul::after{
+  display: none;
+}
+
+
+.vehicle_part ul::before{
+ display: none;
+}
+.content-4 {
+ padding: 2px 10px;
+}
+
+.vehicle_part ul li:nth-child(3) {
+ width: 100%;
+ padding-bottom: 20px;
+}
+
+.sideMap_part {
+ background: #fff;
+ box-shadow: 0 0 30px rgba(171, 171, 171, 0.05);
+ border-radius: 5px;
+ padding: 12px;
+ margin-top: 34px;
+}
+
+.mini_map a.venobox{
+ height: 250px;
+}
+.secondPage_left {
+ background: #fafafa;
+ padding: 17px 0 17px 0;
+ font-family: "Arimo", sans-serif;
+}
+.footer_part {
+ padding: 18px 0;
+ font-family: "Arimo", sans-serif;
+ background: #f5f5f5;
+}
+.marble_car_bottom {
+ padding-top: 40px;
+ padding-bottom: 53px;
+}
+
+.vehicle_part ul li:nth-child(1) {
+	width: 56%;
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -574,6 +716,34 @@
   .footer_part .col-md-3:last-child ul::after {
     display: none;
   }
+
+
+    /* =============================
+     First page Responsive 
+     max-width:  767.98px 
+=============================== */
+.customBar{
+  height: 350px;
+  top: 100px;
+}
+
+.bar{
+  height: 450px;
+}
+.end_point{
+  top: 280px;
+}
+
+.sideMap_part{
+  margin-top: 100px;
+}
+.secondPage_left {
+	background: #fafafa;
+	padding: 100px 0 25px 0;
+	font-family: "Arimo", sans-serif;
+}
+
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -598,6 +768,58 @@
   .marble_car_bottom ul li span:last-child {
     font-size: 18px;
   }
+
+  /* =========================
+          second page
+   ============================*/
+   .customBar{
+    height: 350px;
+    top: 100px;
+  }
+   .pos_rel{
+    left: -25px;
+  }
+  
+.bar{
+  height: 450px;
+}
+.end_point{
+  top: 280px;
+}
+
+.secondPage_left {
+	background: #fafafa;
+	padding: 100px 0 25px 0;
+	font-family: "Arimo", sans-serif;
+}
+.mini_map a.venobox{
+  height: 250px;
+}
+
+.vehicle_part ul li:nth-child(2) {
+	width: 50%;
+}
+.vehicle_part ul li:nth-child(1) {
+	width: 49%;
+}
+
+.vehicle_part ul::after{
+  display: none;
+}
+
+
+.vehicle_part ul::before{
+ display: none;
+}
+.content-4 {
+ padding: 2px 10px;
+}
+
+.vehicle_part ul li:nth-child(3) {
+ width: 100%;
+ padding-bottom: 20px;
+}
+
 }
 
 @media (min-width: 1200px) {
