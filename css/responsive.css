@@ -56,18 +56,25 @@
     padding: 0;
     margin-top: 10px;
   }
+
   .banner_part ul li .location_icon {
     position: absolute;
     top: 0px;
     left: 6px;
     border-right: 1px solid #ddd;
-    height: 50px;
-    line-height: 50px;
+    height: 45px;
+    line-height: 45px;
     padding-right: 0px;
     /* padding-left: 2px; */
     font-size: 19px;
     color: #53d4f7;
   }
+
+  .car_info ul li:last-child{
+    margin-right: 0;
+  }
+
+
   .banner_part .bselect-active::after {
     display: none;
   }
@@ -120,7 +127,7 @@
     margin-right: 10px;
   }
   .video_part .play_btn {
-    top: 63%;
+    top: 53%;
     width: 75px;
     height: 75px;
     line-height: 75px;
@@ -417,7 +424,7 @@
     margin-right: 10px;
   }
   .video_part .play_btn {
-    top: 63%;
+    top: 55%;
     width: 75px;
     height: 75px;
     line-height: 75px;
@@ -506,6 +513,10 @@
 
   .fleet_part{
     padding-bottom: 175px;
+  }
+
+  .car_info ul li:last-child{
+    margin-right: 0;
   }
 
    /* =============================
@@ -702,7 +713,7 @@
     height: 56px;
   }
   .video_part .play_btn {
-    top: 63%;
+    top: 56%;
     width: 75px;
     height: 75px;
     line-height: 75px;
@@ -735,7 +746,7 @@
   }
   .marble_text_part p {
     transform: skew(0);
-    text-align: left;
+
   }
   .marble_car_bottom ul li.col-lg-4 {
     flex: 0 0 39%;
