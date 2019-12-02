@@ -207,6 +207,8 @@ button:hover {
 .banner_content {
   background: #fff;
   border-radius: 5px;
+  position: relative;
+  z-index: 99;
 }
 
 .banner_input_content {
@@ -890,6 +892,11 @@ button:hover {
   font-size: 27px;
 }
 
+#add_btn{
+  cursor: pointer;
+  user-select: none;
+}
+
 .left_location_input .location_icon i {
   display: inline-block;
   transform: translateX(-4px);
@@ -1323,4 +1330,59 @@ button:hover {
   color: #222;
   font-size: 18px;
   font-family: 'Armo',sans-serif;
+}
+
+
+/* fixed vehicle info */
+.fixedinfo{
+  height: 88px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background: #222;
+  display: none;
+}
+
+.fixedinfo ul.f_logo{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 40px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.fixedinfo ul.f_logo li{
+  color: #fff;
+  font-size: 14px;
+}
+.fixedinfo ul.f_text{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.fixedinfo ul.f_text li{
+  color: #fff;
+  padding: 0 15px;
+  vertical-align: middle;
+  
+}
+
+.fixedinfo ul.f_text li:first-child span{
+   pad: 0 15px;
+   text-align: center;
+}
+.fixedinfo ul.f_text li:first-child span:first-child{
+  font-size: 26px;
+  margin-right: 20px;
+}
+.time{
+  font-size: 26px;
+  font-family: 'Arimo';
+}
+
+.second_page_copy{
+  margin-bottom: 80px;
 }
