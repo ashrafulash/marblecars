@@ -102,7 +102,7 @@
   .video_part {
     position: static;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 40px;
   }
   .fleet_car .car_info {
     padding-bottom: 15px;
@@ -151,7 +151,8 @@
   }
   .marble_text_part p {
     transform: skew(0);
-    text-align: left;
+    text-align: justify;
+    hyphens: auto;
   }
   .marble_car_bottom ul li.col-lg-4 {
     flex: 0 0 92%;
@@ -179,9 +180,31 @@
   .footer_part ul::after {
     display: none;
   }
-  .footer_part .col-lg-3:last-child ul {
+  .footer_part .col-lg-3:nth-child(3) ul {
     border-bottom: 0;
   }
+  
+  .footer_part .col-lg-3:nth-child(4) ul {
+    border-bottom: 0;
+  }
+
+  .copyright ul li:last-child{
+    border-bottom: 0;
+  }
+  
+
+  .sideMenu ul{
+    padding-top: 0;
+  }
+  .sideMenu ul li a{
+    height: 40px;
+    line-height: 40px;
+  }
+  .fleet_part {
+    font-family: "Arimo", sans-serif;
+    padding-bottom: 167px;
+  }
+
   .copyright ul li {
     display: inline-block;
     margin: 0 10px;
@@ -451,6 +474,9 @@
   .footer_part ul::after {
     display: none;
   }
+  .footer_part .col-lg-3:nth-child(3) ul {
+    border-bottom: 0;
+  }
   .footer_part .col-lg-3:last-child ul {
     border-bottom: 0;
   }
@@ -460,6 +486,24 @@
     line-height: 23px;
     border-bottom: 1px solid aliceblue;
   }
+
+  .sideMenu ul{
+    padding-top: 0;
+  }
+  .sideMenu ul li a{
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .marble_text_part p{
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .fleet_part{
+    padding-bottom: 175px;
+  }
+
    /* =============================
      Second page Responsive 
      max-width:  575.98px 
@@ -725,6 +769,14 @@
     display: none;
   }
 
+  .sideMenu ul{
+    padding-top: 0;
+  }
+
+  .sideMenu ul li a{
+    height: 50px;
+    line-height: 50px;
+  }
 
     /* =============================
      First page Responsive 
@@ -842,4 +894,5 @@
   .fixedinfo{
     display: none;
   }
+
 }
