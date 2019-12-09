@@ -1,524 +1,645 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Marble Cars</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marble Cars</title>
 
-	<!--necessary css files-->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/bselect.css">
-	<link rel="stylesheet" href="css/all.min.css">
-	<link rel="stylesheet" href="flaticon/flaticon.css">
-	<link rel="stylesheet" href="css/jquery.datepicker2.css">
-	<link rel="stylesheet" href="css/venobox.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
+    <!--necessary css files-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/venobox.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-	<!--=========================
+    <!--=========================
     headeder top start
 ===========================-->
-	<section class="header_top">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-4">
-					<h3>Welcome to Marble Cars</h3>
-				</div>
-				<div class="col-lg-6 col-md-8 text-lg-right">
-					<ul>
-						<li><span><i class="fas fa-envelope"></i></span> marblecars@gmail.com</li>
-						<li><span><i class="fas fa-phone-alt"></i></span>+880 1234 567 890</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="header_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-4">
+                    <h3>Welcome to Marble Cars</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!--=========================
+    <!--=========================
     headeder top end
 ===========================-->
-	<!--=========================
+    <!--=========================
     navigation start
 ===========================-->
-	<nav class="navigation_part">
-		<div class="container">
-			<div class="row justify-content-lg-between">
-				<div class="col-lg-3 col-1"></div>
-				<div class="col-lg-3 col-4 order-0  text-lg-center">
-					<div class="nav_logo">
-						<a href="index.html">
-							<img class="w-100" src="images/logo.png" alt="logo">
-						</a>
-						<div class="logo_shape">
-							<img src="images/logo_shape.png" alt="logo_shape">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-7 text-lg-right">
-					<div class="nav_btn">
-						<ul>
-							<li>
-								<a id="signIn_btn" href="index.html">Sign in</a>
-							</li>
-							<li>
-								<span id="menu_btn"><i class="fas fa-align-right"></i></span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</nav>
+    <nav class="navigation_part">
+        <div class="container">
+            <div class="row justify-content-lg-between">
+                <div class="col-lg-3 col-1"></div>
+                <div class="col-lg-3 col-4 order-0  text-lg-center">
+                    <div class="nav_logo">
+                        <a href="index.html">
+                            <img class="w-100" src="images/logo.png" alt="logo">
+                        </a>
+                        <div class="logo_shape">
+                            <img src="images/logo_shape.png" alt="logo_shape">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-7 text-lg-right">
+                    <div class="nav_btn">
+                        <ul>
+                            <li>
+                                <button id="signIn_btn" href="index.html">Sign in</button>
+                            </li>
+                            <li>
+                                <span id="menu_btn"><i class="fas fa-align-right"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-	<!--=========================
+        </div>
+    </nav>
+
+    <!--=========================
     navigation end
 ===========================-->
-	<!--=========================
+    <!--=========================
    	 banner part start
 ===========================-->
-	<section class="banner_part">
-		<div class="container">
-			<div class="banner_content">
-				<div class="banner_input_content">
+    <section class="banner_part">
+        <div class="container">
+            <div class="banner_content">
+                <form action="secondPage.html">
+                    <div class="banner_input_content">
 
-					<ul class="row">
-						<li class="col-lg-4">
-							<span class="location_icon"><i class="flaticon-pin"></i></span>
-							<div id="select-box-preselect1"></div>
-						</li>
-						<li class="col-lg-4">
-							<span class="location_icon"><i class="flaticon-find"></i></span>
-							<div id="select-box-preselect2"></div>
-						</li>
-						<li class="col-lg-4">
-							<span class="location_icon last_border"><i class="flaticon-calendar"></i></span>
-							<input type="text" class="form-control" name="date" id="date" data-select="datepicker" placeholder="Date & time">
-						</li>
-					</ul>
+                        <ul class="row">
+                            <li class="col-lg-4">
+                                <div class="input_holder">
+                                    <span class="location_icon"><i class="flaticon-pin"></i></span>
+                                    <input class="input_fields" type="text" placeholder="Pickup Address">
+                                </div>
+                            </li>
+                            <li class="col-lg-4">
+                                <div class="input_holder">
+                                    <span class="location_icon"><i class="flaticon-find"></i></span>
+                                    <input class="input_fields" type="text" placeholder="Destination Address">
+                                </div>
+                            </li>
+                            <li class="col-lg-4">
+                                <div class="input_holder">
+                                    <span class="location_icon last_border"><i class="flaticon-calendar"></i></span>
 
-				</div>
-				<a href="secondPage.html" class="banner_continue_btn">
-					<span>Continue</span>
-					<span><i class="fas fa-long-arrow-alt-right"></i></span>
-				</a>
-			</div>
-		</div>
-	</section>
+                                    <input id="date_picker_input" class="input_fields date_time" type="text" placeholder="Date Time">
 
-	<!--=========================
+                                    <div class="datePicker">
+                                        <div class="choose">
+                                            <button type="button" id="asap_btn">ASAP</button>
+                                            <button type="button" id="later_btn">Later</button>
+                                        </div>
+                                        <div class="later_part">
+
+
+
+                                            <span id="date-text2"></span>
+
+
+                                            <div id="demo2"></div>
+
+
+                                            <div class="calender_time">
+
+                                                <ul>
+                                                    <h3>Hour</h3>
+                                                    <li class="d-flex">
+
+
+                                                        <h4 id="hour_box">0</h4>
+
+
+
+                                                        <button id="h_up" type="button">Up</button>
+
+                                                        <button id="h_down" type="button">Down</button>
+
+                                                    </li>
+
+                                                    <h3 class="mt-2">Minute</h3>
+                                                    <li class="d-flex">
+
+                                                        <h4 id="minBox">0</h4>
+                                                        <button id="m_up" type="button">Up</button>
+
+                                                        <button id="m_down" type="button">Down</button>
+                                                    </li>
+
+                                                    <li>
+                                                        <button id="ok_btn" type="button">Ok</button>
+                                                        <button id="cancel_btn" type="button">Cencel</button>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <button type="submit" class="banner_continue_btn">
+                        <span>Continue</span>
+                        <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--=========================
    	 banner part end
 ===========================-->
 
 
-	<!--=========================
+    <!--=========================
    	 fleet part start
 ===========================-->
-	<section class="fleet_part">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3">
-					<div class="fleet_sidebar">
+    <section class="fleet_part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="fleet_sidebar">
 
-						<div class="flet_title">
-							<h2>Our Fleet</h2>
-						</div>
+                        <div class="flet_title">
+                            <h2>Our Fleet</h2>
+                        </div>
 
-						<div class="list-group fleet_sidebar" id="list-tab" role="tablist">
-							<div class="list-group fleet_sidebar" id="list-tab" role="tablist">
-								<!--saloon button-->
-								<a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Saloon</a>
-								<!--estate button-->
-								<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Estate</a>
-								<!--MPV button-->
-								<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">MPV</a>
-								<!--8 seater button-->
-								<a class="list-group-item list-group-item-action active" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">8 Seater</a>
+                        <div class="list-group fleet_sidebar" id="list-tab" role="tablist">
+                            <div class="list-group fleet_sidebar" id="list-tab" role="tablist">
+                                <!--saloon button-->
+                                <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Saloon</a>
+                                <!--estate button-->
+                                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Estate</a>
+                                <!--MPV button-->
+                                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">MPV</a>
+                                <!--8 seater button-->
+                                <a class="list-group-item list-group-item-action active" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">8 Seater</a>
 
-								<!--e-class button-->
-								<a class="list-group-item list-group-item-action" id="list-home-listOne" data-toggle="list" href="#list-homeOne" role="tab" aria-controls="home">E-Class</a>
-								<!--s-class button-->
-								<a class="list-group-item list-group-item-action" id="list-profile-listOne" data-toggle="list" href="#list-profileOne" role="tab" aria-controls="profile">S-Class</a>
-								<!--tesla-model S button-->
-								<a class="list-group-item list-group-item-action" id="list-messages-listOne" data-toggle="list" href="#list-messagesOne" role="tab" aria-controls="messages">Tesla Model S</a>
-								<!--v-class button-->
-								<a class="list-group-item list-group-item-action" id="list-settings-listOne" data-toggle="list" href="#list-settingsOne" role="tab" aria-controls="settings">V-Class</a>
-
-
-
-
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-
-
-				<div class="col-lg-9">
-					<div class="tab-content" id="nav-tabContent">
-						<!--Saloon contenet-->
-						<div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-
-							<div class="fleet_car">
-								<div class="car_image sloonTitle">
-									<img src="images/saloon.png" alt="car">
-								</div>
-								<div class="car_info">
-									<ul>
-										<li>
-											<span><i class="flaticon-sit-1"></i></span>
-											<span>Passenger - 3</span>
-										</li>
-										<li>
-											<span><i class="flaticon-travel-1"></i></span>
-											<span>Luggage - 2</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-						</div>
-						<!--Estate contenet-->
-						<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-
-							<div class="fleet_car">
-								<div class="car_image estateTitle">
-									<img src="images/estatecar.png" alt="car">
-								</div>
-								<div class="car_info">
-									<ul>
-										<li>
-											<span><i class="flaticon-sit-1"></i></span>
-											<span>Passenger - 8</span>
-										</li>
-										<li>
-											<span><i class="flaticon-travel-1"></i></span>
-											<span>Luggage - 8</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-
-						</div>
-						<!--MPV contenet-->
-						<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-
-							<div class="fleet_car">
-								<div class="car_image mpvTitle">
-									<img src="images/mpvCar.png" alt="car">
-								</div>
-								<div class="car_info">
-									<ul>
-										<li>
-											<span><i class="flaticon-sit-1"></i></span>
-											<span>Passenger - 8</span>
-										</li>
-										<li>
-											<span><i class="flaticon-travel-1"></i></span>
-											<span>Luggage - 8</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-						</div>
-						<!--8 Seater contenet-->
-						<div class="tab-pane fade show active" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-
-							<div class="fleet_car">
-								<div class="car_image eightSeater">
-									<img src="images/8seater.png" alt="car">
-								</div>
-								<div class="car_info">
-									<ul>
-										<li>
-											<span><i class="flaticon-sit-1"></i></span>
-											<span>Passenger - 8</span>
-										</li>
-										<li>
-											<span><i class="flaticon-travel-1"></i></span>
-											<span>Luggage - 8</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-						</div>
-						<!--E-Class contenet-->
-						<div class="tab-pane fade" id="list-homeOne" role="tabpanel" aria-labelledby="list-home-listOne">
-
-							<div class="fleet_car">
-								<div class="car_image eClassTitle">
-									<img src="images/E-Class.png" alt="car">
-								</div>
-								<div class="car_info">
-									<ul>
-										<li>
-											<span><i class="flaticon-sit-1"></i></span>
-											<span>Passenger - 3</span>
-										</li>
-										<li>
-											<span><i class="flaticon-travel-1"></i></span>
-											<span>Luggage - 2</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-						</div>
-						<!--S-Class contenet-->
-						<div class="tab-pane fade" id="list-profileOne" role="tabpanel" aria-labelledby="list-profile-listOne">
-
-							<div class="fleet_car">
-								<div class="car_image sClassTitle">
-									<img src="images/sClassCar.png" alt="car">
-								</div>
-								<div class="car_info">
-									<ul>
-										<li>
-											<span><i class="flaticon-sit-1"></i></span>
-											<span>Passenger - 3</span>
-										</li>
-										<li>
-											<span><i class="flaticon-travel-1"></i></span>
-											<span>Luggage - 2</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-
-						</div>
-						<!--Tesla Model S contenet-->
-						<div class="tab-pane fade" id="list-messagesOne" role="tabpanel" aria-labelledby="list-messages-listOne">
-
-								<div class="fleet_car">
-										<div class="car_image sClassTitle">
-											<img src="images/vClass.png" alt="car">
-										</div>
-										<div class="car_info">
-											<ul>
-												<li>
-													<span><i class="flaticon-sit-1"></i></span>
-													<span>Passenger - 3</span>
-												</li>
-												<li>
-													<span><i class="flaticon-travel-1"></i></span>
-													<span>Luggage - 2</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-						</div>
-						<!--V-Class contenet-->
-
-						<div class="tab-pane fade" id="list-settingsOne" role="tabpanel" aria-labelledby="list-settings-listOne">
-
-							
-								<div class="fleet_car">
-										<div class="car_image vClassTitle">
-											<img src="images/vClass.png" alt="car">
-										</div>
-										<div class="car_info">
-											<ul>
-												<li>
-													<span><i class="flaticon-sit-1"></i></span>
-													<span>Passenger - 3</span>
-												</li>
-												<li>
-													<span><i class="flaticon-travel-1"></i></span>
-													<span>Luggage - 2</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-		
-						</div>
+                                <!--e-class button-->
+                                <a class="list-group-item list-group-item-action" id="list-home-listOne" data-toggle="list" href="#list-homeOne" role="tab" aria-controls="home">E-Class</a>
+                                <!--s-class button-->
+                                <a class="list-group-item list-group-item-action" id="list-profile-listOne" data-toggle="list" href="#list-profileOne" role="tab" aria-controls="profile">S-Class</a>
+                                <!--tesla-model S button-->
+                                <a class="list-group-item list-group-item-action" id="list-messages-listOne" data-toggle="list" href="#list-messagesOne" role="tab" aria-controls="messages">Tesla Model S</a>
+                                <!--v-class button-->
+                                <a class="list-group-item list-group-item-action" id="list-settings-listOne" data-toggle="list" href="#list-settingsOne" role="tab" aria-controls="settings">V-Class</a>
 
 
 
-					</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
 
 
-				</div>
+                <div class="col-lg-9">
+                    <div class="tab-content" id="nav-tabContent">
+                        <!--Saloon contenet-->
+                        <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
 
-			</div>
-		</div>
-	</section>
+                            <div class="fleet_car">
+                                <div class="car_image sloonTitle">
+                                    <img src="images/saloon.png" alt="car">
+                                </div>
+                                <div class="car_info">
+                                    <ul>
+                                        <li>
+                                            <span><i class="flaticon-sit-1"></i></span>
+                                            <span>Passenger - 3</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="flaticon-travel-1"></i></span>
+                                            <span>Luggage - 2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-	<!--=========================
+                        </div>
+                        <!--Estate contenet-->
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+
+                            <div class="fleet_car">
+                                <div class="car_image estateTitle">
+                                    <img src="images/estatecar.png" alt="car">
+                                </div>
+                                <div class="car_info">
+                                    <ul>
+                                        <li>
+                                            <span><i class="flaticon-sit-1"></i></span>
+                                            <span>Passenger - 8</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="flaticon-travel-1"></i></span>
+                                            <span>Luggage - 8</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!--MPV contenet-->
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+
+                            <div class="fleet_car">
+                                <div class="car_image mpvTitle">
+                                    <img src="images/mpvCar.png" alt="car">
+                                </div>
+                                <div class="car_info">
+                                    <ul>
+                                        <li>
+                                            <span><i class="flaticon-sit-1"></i></span>
+                                            <span>Passenger - 8</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="flaticon-travel-1"></i></span>
+                                            <span>Luggage - 8</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--8 Seater contenet-->
+                        <div class="tab-pane fade show active" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+
+                            <div class="fleet_car">
+                                <div class="car_image eightSeater">
+                                    <img src="images/8seater.png" alt="car">
+                                </div>
+                                <div class="car_info">
+                                    <ul>
+                                        <li>
+                                            <span><i class="flaticon-sit-1"></i></span>
+                                            <span>Passenger - 8</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="flaticon-travel-1"></i></span>
+                                            <span>Luggage - 8</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--E-Class contenet-->
+                        <div class="tab-pane fade" id="list-homeOne" role="tabpanel" aria-labelledby="list-home-listOne">
+
+                            <div class="fleet_car">
+                                <div class="car_image eClassTitle">
+                                    <img src="images/E-Class.png" alt="car">
+                                </div>
+                                <div class="car_info">
+                                    <ul>
+                                        <li>
+                                            <span><i class="flaticon-sit-1"></i></span>
+                                            <span>Passenger - 3</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="flaticon-travel-1"></i></span>
+                                            <span>Luggage - 2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--S-Class contenet-->
+                        <div class="tab-pane fade" id="list-profileOne" role="tabpanel" aria-labelledby="list-profile-listOne">
+
+                            <div class="fleet_car">
+                                <div class="car_image sClassTitle">
+                                    <img src="images/sClassCar.png" alt="car">
+                                </div>
+                                <div class="car_info">
+                                    <ul>
+                                        <li>
+                                            <span><i class="flaticon-sit-1"></i></span>
+                                            <span>Passenger - 3</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="flaticon-travel-1"></i></span>
+                                            <span>Luggage - 2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!--Tesla Model S contenet-->
+                        <div class="tab-pane fade" id="list-messagesOne" role="tabpanel" aria-labelledby="list-messages-listOne">
+
+                            <div class="fleet_car">
+                                <div class="car_image sClassTitle">
+                                    <img src="images/vClass.png" alt="car">
+                                </div>
+                                <div class="car_info">
+                                    <ul>
+                                        <li>
+                                            <span><i class="flaticon-sit-1"></i></span>
+                                            <span>Passenger - 3</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="flaticon-travel-1"></i></span>
+                                            <span>Luggage - 2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--V-Class contenet-->
+
+                        <div class="tab-pane fade" id="list-settingsOne" role="tabpanel" aria-labelledby="list-settings-listOne">
+
+
+                            <div class="fleet_car">
+                                <div class="car_image vClassTitle">
+                                    <img src="images/vClass.png" alt="car">
+                                </div>
+                                <div class="car_info">
+                                    <ul>
+                                        <li>
+                                            <span><i class="flaticon-sit-1"></i></span>
+                                            <span>Passenger - 3</span>
+                                        </li>
+                                        <li>
+                                            <span><i class="flaticon-travel-1"></i></span>
+                                            <span>Luggage - 2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--=========================
    	 fleet part end
 ===========================-->
 
-	<!--=========================
+    <!--=========================
    	 marble car start
 ===========================-->
-	<section class="marble_car_part">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="video_part">
-						<img class="w-100" src="images/video_bg.png" alt="video_bg">
-						<a class="play_btn venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/YH18UaMPjHY"><i class="fas fa-play"></i> </a>
-					</div>
-				</div>
-				<div class="col-lg-8">
-					<div class="marble_text_part">
-						<h2>Our Marble Cars</h2>
-						<p> We are a London based Ground Transfer Provider. We offer Airport Transfer Service to /
-							From London Heathrow, Gatwick, Stansted, Luton Airport, Southend Airport and London
-							City Airport. We also provide ground transfer service to/from cruise ports near by London,
-							London to other cities in the United Kingdom. You can book whole day London tour with us.
-							Our well trained driver will ensure an excellent London experience. Whether you are a busin
-							ess traveller or Holidaymaker, we offer tailored ground transfer service according to your re
-							quirement. We also arrange group transfer for medium and large groups, full-day tour in
-							London and surrounding areas. Our dedicated customer service team is open 24/7 around the
-							year for your assistance. You can also get an instant quote via our website or call us over the
-							phone +442081236763. Marble Cars is fully licensed by London Transport authority. All our vehicles and drivers are also licensed by the London Private Hire authority.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="marble_car_part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="video_part">
+                        <img class="w-100" src="images/video_bg.png" alt="video_bg">
+                        <!--						<a class="play_btn venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/YH18UaMPjHY"><i class="fas fa-play"></i> </a>-->
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="marble_text_part">
+                        <h2>About Us</h2>
+                        <p> We are a London based Ground Transfer Provider. We offer Airport Transfer Service to /
+                            From London Heathrow, Gatwick, Stansted, Luton Airport, Southend Airport and London
+                            City Airport. We also provide ground transfer service to/from cruise ports near by London,
+                            London to other cities in the United Kingdom. You can book whole day London tour with us.
+                            Our well trained driver will ensure an excellent London experience. Whether you are a busin
+                            ess traveller or Holidaymaker, we offer tailored ground transfer service according to your re
+                            quirement. We also arrange group transfer for medium and large groups, full-day tour in
+                            London and surrounding areas. Our dedicated customer service team is open 24/7 around the
+                            year for your assistance. You can also get an instant quote via our website or call us over the
+                            phone +442081236763. Marble Cars is fully licensed by London Transport authority. All our vehicles and drivers are also licensed by the London Private Hire authority.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!--=========================
+    <!--=========================
    	 marble car end
 ===========================-->
 
-<!--=========================
+    <!--=========================
    marble car bottom start
 ===========================-->
-<section class="marble_car_bottom">
-	
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-9">
-				
-				<ul class="row">
-					<li class="col-lg-4">
-					  <span>
-					  	<img src="images/safety_icon.png" alt="safety icon">
-					  </span>
-					  <span>Safety</span>
-					</li>
-					<li class="col-lg-4">
-					  <span>
-					  	<img src="images/real_icon.png" alt="real_icon">
-					  </span>
-					  <span>Reliability</span>
-					</li>
-					<li class="col-lg-4">
-					  <span>
-					  	<img src="images/punct_icon.png" alt="punct_icon">
-					  </span>
-					  <span>Punctuality</span>
-					</li>
-				</ul>
-				
-			</div>
-		</div>
-	</div>
-	
-</section>
+    <section class="marble_car_bottom">
 
-<!--=========================
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+
+                    <ul class="row">
+                        <li class="col-lg-4">
+                            <span>
+                                <img src="images/safety_icon.png" alt="safety icon">
+                            </span>
+                            <span>Safety</span>
+                        </li>
+                        <li class="col-lg-4">
+                            <span>
+                                <img src="images/real_icon.png" alt="real_icon">
+                            </span>
+                            <span>Reliability</span>
+                        </li>
+                        <li class="col-lg-4">
+                            <span>
+                                <img src="images/punct_icon.png" alt="punct_icon">
+                            </span>
+                            <span>Punctuality</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--=========================
    marble car bottom end
 ===========================-->
 
-<!--=========================
+    <!--=========================
   		 footer start
 ===========================-->
-<section class="footer_part">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-6 col-md-3">
-				<ul>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Terms &amp; Condtions</a></li>
-					<li  class="active"><a href="#">Privacy Policy</a></li>
-				</ul>
-			</div>
-			<div class="col-lg-3 col-6 col-md-3">
-				<ul>
-					<li><a href="#">Service Areas</a></li>
-					<li><a href="#">Airport Transfers</a></li>
-					<li  class="active"><a href="#">Cruise Transfers</a></li>
-					<li><a href="#">City Transfers</a></li>
-				</ul>
-			</div>
-			<div class="col-lg-3 col-6 col-md-3">
-		
-				<ul>
-					<li><a href="#">London Tours</a></li>
-					<li  class="active"><a href="#">Oxford Tour</a></li>
-					<li><a href="#">Bicester VillageTour</a></li>
-					<li><a href="#">Harry Porter Tour</a></li>
-				</ul>
-			</div>
-			<div class="col-lg-3 col-6 col-md-3">
-				<ul>
-					<li class="active"><a href="#">Travel Agents</a></li>
-					<li><a href="#">Business Accounts</a></li>
-					<li><a href="#">Cruise Transfers</a></li>
-				</ul>
-			</div>
-			
-		</div>
-	</div>
-</section>
+    <section class="footer_part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-6 col-md-4">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Terms &amp; Condtions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-6 col-md-4">
+                    <ul>
+                        <li><a href="#">Service Areas</a></li>
+                        <li><a href="#">Airport Transfers</a></li>
+                        <li class="active"><a href="#">Cruise Transfers</a></li>
 
-<!--=========================
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-6 col-md-4">
+
+                    <ul>
+                        <li><a href="#">Coach Hire</a></li>
+                        <li class="active"><a href="#">Group Transfers</a></li>
+                        <li><a href="#">City Tours</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--=========================
   		 footer end
 ===========================-->
 
 
-<!--=========================
-  	 footer part start
+    <!--=========================
+  	 footer bottom start
 ===========================-->
-<section class="copyright">
-	<div class="container">
-		<ul>
-			<li><a href="#">Heathrow Airport Transfer</a></li>
-			<li><a href="#">Gatwick Airport Transfer</a></li>
-			<li><a href="#">Stansted Airport Transfer</a> </li>
-			<li><a href="#">Luton Airport Transfer</a> </li>
-			<li><a href="#">London City Airport Transfer</a></li>
-			<li><a href="#">South End Airport Transfer</a></li>
-		</ul>
-	</div>
-</section>
-<!--=========================
-  	 footer part end
+    <section class="copyright">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+                <li><a href="#"><i class="fab fa-tripadvisor"></i></a> </li>
+            </ul>
+        </div>
+    </section>
+    <!--=========================
+  	 footer bottom end
 ===========================-->
 
 
-<!--=========================
+    <!--=========================
   	 sidebar start
 ===========================-->
-<sectionn class="sideMenu">
-	<div class="menu_bar">
-		<button id="close_menu"><i class="fas fa-times"></i></button>
+    <sectionn class="sideMenu">
+        <div class="menu_bar">
+            <button id="close_menu"><i class="fas fa-times"></i></button>
 
-		<ul>
-			<li><a href="#">Airport Transfers</a></li>
-			<li><a href="#">London Tours</a></li>
-			<li><a href="#">Business Accounts</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</div>
-</sectionn>
+            <ul>
+                <li><a href="#">Airport Transfers</a></li>
+                <li><a href="#">London Tours</a></li>
+                <li><a href="#">Business Accounts</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="sign_up_part">
+            <div class="container sup">
+
+                <div class="close_sup"><i class="fas fa-times"></i></div>
+
+                <div class="row justify-content-center align-items-center flex-column">
+                    <div class="col-6">
+
+                        <div class="list-group flex-row" id="list-tab" role="tablist">
+
+                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home2" role="tab" aria-controls="home">Sign In</a>
+
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile2" role="tab" aria-controls="profile">Sign Up</a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-10">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-home2" role="tabpanel" aria-labelledby="list-home-list">
+
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">remember</label>
+                                        <a class="ml-lg-5" href="#">Forgot Password</a>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary sign_btn">Submit</button>
+                                </form>
+
+                            </div>
 
 
-<!--=========================
+                            <div class="tab-pane fade" id="list-profile2" role="tabpanel" aria-labelledby="list-profile-list">
+
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-6">
+                                            <input type="text" class="form-control" placeholder="First name">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="text" class="form-control" placeholder="Last name">
+                                        </div>
+                                        <div class="col-6 mt-4">
+                                            <input type="text" class="form-control" placeholder="Mobile Number">
+                                        </div>
+                                        <div class="col-6 mt-4">
+                                            <input type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                        <div class="col-6 mt-4">
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="col-6 mt-4">
+                                            <input type="password" class="form-control" placeholder="Confirm Password">
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="button" class="btn btn-primary mt-4 sign_btn">Sign Up</button>
+                                </form>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </sectionn>
+
+
+
+    <!--=========================
   	 sidebar end
 ===========================-->
 
@@ -526,18 +647,15 @@
 
 
 
-	<!--necessary javascrpt files-->
-	<script src="https://kit.fontawesome.com/5dae415ef9.js" crossorigin="anonymous"></script>
-	<script src="js/jquery-1.12.4.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<!--jquery.min.js is for dropdown selector-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.datepicker2.js"></script>
-	<script src="js/jquery.bselect.js"></script>
-	<script src="js/venobox.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/custom.js"></script>
+    <!--necessary javascrpt files-->
+    <script src="https://kit.fontawesome.com/5dae415ef9.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/jquery.datetimepicker.js"></script>
+    <script src="js/custom.js"></script>
+
 </body>
 
 </html>

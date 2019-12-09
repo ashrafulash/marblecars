@@ -1,45 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Second Page</title>
 
     <!--necessary css files-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/slick.css" />
-    <link rel="stylesheet" href="css/bselect.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="flaticon/flaticon.css" />
-    <link rel="stylesheet" href="css/jquery.datepicker2.css" />
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css">
     <link rel="stylesheet" href="css/venobox.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <!--=========================
     headeder top start
 ===========================-->
     <section class="header_top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-4">
-            <h3>Welcome to Marble Cars</h3>
-          </div>
-          <div class="col-lg-6 col-md-8 text-lg-right">
-            <ul>
-              <li>
-                <span><i class="fas fa-envelope"></i></span>
-                marblecars@gmail.com
-              </li>
-              <li>
-                <span><i class="fas fa-phone-alt"></i></span>+880 1234 567 890
-              </li>
-            </ul>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-4">
+                    <h3>Welcome to Marble Cars</h3>
+                </div>
+
+            </div>
         </div>
-      </div>
     </section>
 
     <!--=========================
@@ -49,33 +38,33 @@
     navigation start
 ===========================-->
     <nav class="navigation_part">
-      <div class="container">
-        <div class="row justify-content-lg-between">
-          <div class="col-lg-3 col-1"></div>
-          <div class="col-lg-3 col-4 order-0  text-lg-center">
-            <div class="nav_logo">
-              <a href="index.html">
-                <img class="w-100" src="images/logo.png" alt="logo" />
-              </a>
-              <div class="logo_shape">
-                <img src="images/logo_shape.png" alt="logo_shape" />
-              </div>
+        <div class="container">
+            <div class="row justify-content-lg-between">
+                <div class="col-lg-3 col-1"></div>
+                <div class="col-lg-3 col-4 order-0  text-lg-center">
+                    <div class="nav_logo">
+                        <a href="index.html">
+                            <img class="w-100" src="images/logo.png" alt="logo" />
+                        </a>
+                        <div class="logo_shape">
+                            <img src="images/logo_shape.png" alt="logo_shape" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-7 text-lg-right">
+                    <div class="nav_btn">
+                        <ul>
+                            <li>
+                                <button id="signIn_btn">Sign in</button>
+                            </li>
+                            <li>
+                                <span id="menu_btn"><i class="fas fa-align-right"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-7 text-lg-right">
-            <div class="nav_btn">
-              <ul>
-                <li>
-                  <a id="signIn_btn" href="index.html">Sign in</a>
-                </li>
-                <li>
-                  <span id="menu_btn"><i class="fas fa-align-right"></i></span>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
     </nav>
 
     <!--=========================
@@ -85,256 +74,289 @@
     secondPage  start
 ===========================-->
     <div class="secondPage_left bbb">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-1 pos_rel col-md-2">
-            <!-- custom progres bar start -->
-            <div class="customBar">
-              <span class="start_point">
-                <i class="flaticon-travel"></i>
-              </span>
-              <div class="bar">
-                <div class="bar_line"></div>
-              </div>
-
-              <span class="end_point">
-                <i class="flaticon-car"></i>
-              </span>
-            </div>
-            <!-- custom progres bar end -->
-          </div>
-          <div class="col-lg-6 col-md-10">
-            <!-- content left start -->
-            <ul class="left_location_title">
-              <li><h2>Journey</h2></li>
-              <li><span id="add_btn">+ Add Location</span></li>
-            </ul>
-
-            <div class="left_location_input">
-              <ul class="row">
-                <li class="col-lg-12">
-                  <span class="location_icon">
-                    <i class="flaticon-pin"></i>
-                  </span>
-                  <div id="select-box-preselect1"></div>
-                </li>
-
-                <li class="col-lg-12">
-                  <span class="location_icon">
-                    <i class="flaticon-find"></i>
-                  </span>
-                  <div id="select-box-preselect2"></div>
-                </li>
-                <li class="col-lg-12">
-                  <span class="location_icon">
-                    <i class="flaticon-calendar"></i>
-                  </span>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="date"
-                    id="date"
-                    data-select="datepicker"
-                    placeholder="Date & time"
-                  />
-                </li>
-                <li class="col-lg-6">
-                  <span class="location_icon">
-                    <i class="flaticon-sit-1"></i>
-                  </span>
-                  <div id="select-box-preselectPerson"></div>
-                </li>
-                <li class="col-lg-6">
-                  <span class="location_icon">
-                    <i class="flaticon-travel-1"></i>
-                  </span>
-                  <div id="select-box-preselectLuggage"></div>
-                </li>
-              </ul>
-
-              <a id="book_return" href="#">Book Return</a>
-            </div>
-
-            <!-- content left end -->
-            <!-- content left vehicle  start-->
-
-            <div class="vehicle_part">
-              <h3 class="vehicleTitle">Vehicle</h3>
-              <ul class="main">
-                <li>
-                  <div class="content-4">
-                    <h3 class="text-center pb-2">Saloon</h3>
-                    <img
-                      class="w-100"
-                      src="images/secondS-class.png"
-                      alt="secondS-class"
-                    />
-                  </div>
-                </li>
-                <li>
-                  <div class="content-4">
-                    <ul class="info">
-                      <li>
-                        <span class="second-icon">
-                          <i class="flaticon-sit-1"></i>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 pos_rel col-md-2">
+                    <!-- custom progres bar start -->
+                    <div class="customBar">
+                        <span class="start_point">
+                            <i class="flaticon-travel"></i>
                         </span>
-                        <span>Passenger - 3</span>
-                      </li>
-                      <li>
-                        <span class="second-icon">
-                          <i class="flaticon-case"></i>
+                        <div class="bar">
+                            <div class="bar_line"></div>
+                        </div>
+
+                        <span class="end_point">
+                            <i class="flaticon-car"></i>
                         </span>
-                        <span>Luggage - 2</span>
-                      </li>
+                    </div>
+                    <!-- custom progres bar end -->
+                </div>
+                <div class="col-lg-6 col-md-10">
+                    <!-- content left start -->
+                    <ul class="left_location_title">
+                        <li>
+                            <h2>Journey</h2>
+                        </li>
+                        <li><span id="add_btn">+ Add Location</span></li>
                     </ul>
-                  </div>
-                </li>
-                <li>
-                  <span class="money">£25</span>
-                </li>
-              </ul>
-              <!-- s-class -->
-              <ul class="main mt-4">
-                <li>
-                  <div class="content-4">
-                    <h3 class="text-center pb-2">S-Class</h3>
-                    <img
-                      class="w-100"
-                      src="images/second_s-class.png"
-                      alt="secondS-class"
-                    />
-                  </div>
-                </li>
-                <li>
-                  <div class="content-4">
-                    <ul class="info">
-                      <li>
-                        <span class="second-icon">
-                          <i class="flaticon-sit-1"></i>
-                        </span>
-                        <span>Passenger - 3</span>
-                      </li>
-                      <li>
-                        <span class="second-icon">
-                          <i class="flaticon-case"></i>
-                        </span>
-                        <span>Luggage - 3</span>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <span class="money">£100</span>
-                </li>
-              </ul>
-              <!-- estate -->
-              <ul class="main mt-4">
-                <li>
-                  <div class="content-4">
-                    <h3 class="text-center pb-2">Estate</h3>
-                    <img
-                      class="w-100"
-                      src="images/second_estate.png"
-                      alt="secondS-class"
-                    />
-                  </div>
-                </li>
-                <li>
-                  <div class="content-4">
-                    <ul class="info">
-                      <li>
-                        <span class="second-icon">
-                          <i class="flaticon-sit-1"></i>
-                        </span>
-                        <span>Passenger - 4</span>
-                      </li>
-                      <li>
-                        <span class="second-icon">
-                          <i class="flaticon-case"></i>
-                        </span>
-                        <span>Luggage - 3</span>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <span class="money">£40</span>
-                </li>
-              </ul>
-            </div>
-            <!-- content left vehicle  end-->
-          </div>
-          <div class="col-lg-5">
-            <!-- ============================
+                        
+                  <form>       
+                        
+                    <div class="left_location_input">
+                        <ul class="row">
+                            <li class="col-lg-12">
+                                <div class="input_holder">
+                                    <span class="location_icon"><i class="flaticon-pin"></i></span>
+                                    <input class="input_fields" type="text" placeholder="Pickup Address">
+                                </div>
+                            </li>
+
+                            <li class="col-lg-12">
+                               <div class="input_holder">
+                                    <span class="location_icon"><i class="flaticon-find"></i></span>
+                                    <input class="input_fields" type="text" placeholder="Destination Address">
+                                </div>
+                            </li>
+                            <li class="col-lg-12">
+                                <div class="input_holder">
+                                    <span class="location_icon last_border"><i class="flaticon-calendar"></i></span>
+                                    <input id="date_picker_input" class="input_fields date_time" type="text" placeholder="Date &amp; Time">
+
+                                    <div class="datePicker">
+                                        <div class="choose">
+                                            <button type="button" id="asap_btn">ASAP</button>
+                                            <button type="button" id="later_btn">Later</button>
+                                        </div>
+                                        <div class="later_part">
+                             
+                                                 
+                                                       
+                                                <span id="date-text2"></span>
+                                                   
+
+                                                <div id="demo2"></div>
+                                                   
+                            
+
+                                                    <div class="calender_time">
+
+                                                        <ul>
+                                                            <h3>Hour</h3>
+                                                            <li class="d-flex">
+                                                               
+                                                              
+                                                                     <h4 id="hour_box">0</h4>
+                                                              
+                                                               
+                                                                 
+                                                                     <button id="h_up" type="button">Up</button>
+                                                                
+                                                                 <button id="h_down" type="button">Down</button>
+                                                               
+                                                            </li>
+                                                            
+                                                           <h3 class="mt-2">Minute</h3>
+                                                            <li class="d-flex">
+                                                              
+                                                               <h4 id="minBox">0</h4>
+                                                                <button id="m_up" type="button">Up</button>
+                                                                
+                                                                <button id="m_down" type="button">Down</button>
+                                                            </li>
+                                                            
+                                                            <li>
+                                                                <button id="ok_btn" type="button">Ok</button>
+                                                                <button id="cancel_btn" type="button">Cencel</button>
+                                                            </li>
+                                                        </ul>
+
+                                                
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="col-lg-6">
+                                <div class="input_holder">
+                                    <span class="location_icon"><i class="flaticon-sit-1"></i></span>
+                                    <input class="input_fields" type="number" placeholder="Person" max="8" min="0">
+                                </div>
+                            </li>
+                            <li class="col-lg-6">
+                                <div class="input_holder">
+                                    <span class="location_icon"><i class="flaticon-travel-1"></i></span>
+                                    <input class="input_fields" type="number" placeholder="Luggage" max="8" min="0">
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a id="book_return" href="#">Book Return</a>
+                    </div>
+                    </form> 
+
+                    <!-- content left end -->
+                    <!-- content left vehicle  start-->
+
+                    <div class="vehicle_part">
+                        <h3 class="vehicleTitle">Vehicle</h3>
+                        <ul class="main">
+                            <li>
+                                <div class="content-4">
+                                    <h3 class="text-center pb-2">Saloon</h3>
+                                    <img class="w-100" src="images/secondS-class.png" alt="secondS-class" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-4">
+                                    <ul class="info">
+                                        <li>
+                                            <span class="second-icon">
+                                                <i class="flaticon-sit-1"></i>
+                                            </span>
+                                            <span>Passenger - 3</span>
+                                        </li>
+                                        <li>
+                                            <span class="second-icon">
+                                                <i class="flaticon-case"></i>
+                                            </span>
+                                            <span>Luggage - 2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="money">£25</span>
+                            </li>
+                        </ul>
+                        <!-- s-class -->
+                        <ul class="main mt-4">
+                            <li>
+                                <div class="content-4">
+                                    <h3 class="text-center pb-2">S-Class</h3>
+                                    <img class="w-100" src="images/second_s-class.png" alt="secondS-class" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-4">
+                                    <ul class="info">
+                                        <li>
+                                            <span class="second-icon">
+                                                <i class="flaticon-sit-1"></i>
+                                            </span>
+                                            <span>Passenger - 3</span>
+                                        </li>
+                                        <li>
+                                            <span class="second-icon">
+                                                <i class="flaticon-case"></i>
+                                            </span>
+                                            <span>Luggage - 3</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="money">£100</span>
+                            </li>
+                        </ul>
+                        <!-- estate -->
+                        <ul class="main mt-4">
+                            <li>
+                                <div class="content-4">
+                                    <h3 class="text-center pb-2">Estate</h3>
+                                    <img class="w-100" src="images/second_estate.png" alt="secondS-class" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-4">
+                                    <ul class="info">
+                                        <li>
+                                            <span class="second-icon">
+                                                <i class="flaticon-sit-1"></i>
+                                            </span>
+                                            <span>Passenger - 4</span>
+                                        </li>
+                                        <li>
+                                            <span class="second-icon">
+                                                <i class="flaticon-case"></i>
+                                            </span>
+                                            <span>Luggage - 3</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="money">£40</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- content left vehicle  end-->
+                </div>
+                <div class="col-lg-5">
+                    <!-- ============================
              second page map start
       ============================= -->
-            <div class="sideMap_part">
-              <div class="mini_map">
-                <a
-                  class="venobox"
-                  data-vbtype="iframe"
-                  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.274838449349!2d-0.4901692846931048!3d51.47146932115136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876719deef800dd%3A0x25e9d338d0c8d3ca!2sTerminal%205%2C%20Longford%2C%20Hounslow%20TW6%202GA%2C%20UK!5e0!3m2!1sen!2sbd!4v1575106293014!5m2!1sen!2sbd"
-                >
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.274838449349!2d-0.4901692846931048!3d51.47146932115136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876719deef800dd%3A0x25e9d338d0c8d3ca!2sTerminal%205%2C%20Longford%2C%20Hounslow%20TW6%202GA%2C%20UK!5e0!3m2!1sen!2sbd!4v1575106293014!5m2!1sen!2sbd"
-                    frameborder="0"
-                    style="border:0;"
-                  ></iframe>
+                    <div class="sideMap_part">
+                        <div class="mini_map">
+                            <a class="venobox" data-vbtype="iframe" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.274838449349!2d-0.4901692846931048!3d51.47146932115136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876719deef800dd%3A0x25e9d338d0c8d3ca!2sTerminal%205%2C%20Longford%2C%20Hounslow%20TW6%202GA%2C%20UK!5e0!3m2!1sen!2sbd!4v1575106293014!5m2!1sen!2sbd">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.274838449349!2d-0.4901692846931048!3d51.47146932115136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876719deef800dd%3A0x25e9d338d0c8d3ca!2sTerminal%205%2C%20Longford%2C%20Hounslow%20TW6%202GA%2C%20UK!5e0!3m2!1sen!2sbd!4v1575106293014!5m2!1sen!2sbd" frameborder="0" style="border:0;"></iframe>
 
-                  <span><i class="fas fa-expand"></i></span>
-                </a>
-              </div>
+                                <span><i class="fas fa-expand"></i></span>
+                            </a>
+                        </div>
 
-              <ul class="list_direction">
-                <li>
-                   <h4><span><i class="fas fa-check"></i></span>From</h4>
-                   <p>Heathrow Terminal 2 TW6 1RR</p>
-                </li>
-                <li>
-                    <h4><span><i class="fas fa-check"></i></span>To</h4>
-                    <p>Heathrow Terminal 4 TW6 3XA</p>
-                 </li>
-                 <li>
-                    <h4><span><i class="fas fa-check"></i></span>Date of Journey</h4>
-                    <p>27/11/2019	02:00 P.M</p>
-                 </li>
-                 <li>
-                    <h4><span><i class="fas fa-check"></i></span>Car Type</h4>
-                    <p>
-                      <span>Saloon</span> 
-                      <span class="sm_info"><i class="fas fa-car"></i> 2</span>
-                      <span class="sm_info"><i class="fas fa-user"></i> 3</span>
-                      
-                    </p>
-                 </li>
-                 <li>
-                    <h4><span><i class="fas fa-check"></i></span>Payment Method</h4>
-                    <p>Card</p>
-                 </li>
-                 <li>
-                    <h4><span><i class="fas fa-check"></i></span>Additional Details</h4>
-                 </li>
-              </ul>
+                        <ul class="list_direction">
+                            <li>
+                                <h4><span><i class="fas fa-check"></i></span>From</h4>
+                                <p>Heathrow Terminal 2 TW6 1RR</p>
+                            </li>
+                            <li>
+                                <h4><span><i class="fas fa-check"></i></span>To</h4>
+                                <p>Heathrow Terminal 4 TW6 3XA</p>
+                            </li>
+                            <li>
+                                <h4><span><i class="fas fa-check"></i></span>Date of Journey</h4>
+                                <p>27/11/2019 02:00 P.M</p>
+                            </li>
+                            <li>
+                                <h4><span><i class="fas fa-check"></i></span>Car Type</h4>
+                                <p>
+                                    <span>Saloon</span>
+                                    <span class="sm_info"><i class="fas fa-car"></i> 2</span>
+                                    <span class="sm_info"><i class="fas fa-user"></i> 3</span>
 
-              <div class="map_footer">
-                  <h4>Have a Promo? Please Sign in to Use</h4>
-                  <ul>
-                    <li>
-                        <span class="ms">£</span> <span class="mo">25</span>
-                    </li>
-                    <li>
-                        <p class="tr">Time Remaining</p>
-                        <p class="t">14:15</p>
-                    </li>
-                  </ul>
-              </div>
-            </div>
-            <!-- ============================
+                                </p>
+                            </li>
+                            <li>
+                                <h4><span><i class="fas fa-check"></i></span>Payment Method</h4>
+                                <p>Card</p>
+                            </li>
+                            <li>
+                                <h4><span><i class="fas fa-check"></i></span>Additional Details</h4>
+                            </li>
+                        </ul>
+
+                        <div class="map_footer">
+                            <h4>Have a Promo? Please Sign in to Use</h4>
+                            <ul>
+                                <li>
+                                    <span class="ms">£</span> <span class="mo">25</span>
+                                </li>
+                                <li>
+                                    <p class="tr">Time Remaining</p>
+                                    <p class="t">14:15</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- ============================
              second page map end
       ============================= -->
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <!--=========================
@@ -345,41 +367,35 @@
   		 footer start
 ===========================-->
     <section class="footer_part">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-6 col-md-3">
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Terms &amp; Condtions</a></li>
-              <li class="active"><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-6 col-md-3">
-            <ul>
-              <li><a href="#">Service Areas</a></li>
-              <li><a href="#">Airport Transfers</a></li>
-              <li class="active"><a href="#">Cruise Transfers</a></li>
-              <li><a href="#">City Transfers</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-6 col-md-3">
-            <ul>
-              <li><a href="#">London Tours</a></li>
-              <li class="active"><a href="#">Oxford Tour</a></li>
-              <li><a href="#">Bicester VillageTour</a></li>
-              <li><a href="#">Harry Porter Tour</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-6 col-md-3">
-            <ul class="bor_0">
-              <li class="active"><a href="#">Travel Agents</a></li>
-              <li><a href="#">Business Accounts</a></li>
-              <li><a href="#">Cruise Transfers</a></li>
-            </ul>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-6 col-md-4">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Terms &amp; Condtions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-6 col-md-4">
+                    <ul>
+                        <li><a href="#">Service Areas</a></li>
+                        <li><a href="#">Airport Transfers</a></li>
+                        <li class="active"><a href="#">Cruise Transfers</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-6 col-md-4">
+
+                    <ul>
+                        <li><a href="#">Coach Hire</a></li>
+                        <li class="active"><a href="#">Group Transfers</a></li>
+                        <li><a href="#">City Tours</a></li>
+             
+                    </ul>
+                </div>
+
+            </div>
         </div>
-      </div>
     </section>
 
     <!--=========================
@@ -387,82 +403,149 @@
 ===========================-->
 
     <!--=========================
-  	 footer part start
+  	 footer bottom start
 ===========================-->
-    <section class="copyright second_page_copy">
-      <div class="container">
-        <ul>
-          <li><a href="#">Heathrow Airport Transfer</a></li>
-          <li><a href="#">Gatwick Airport Transfer</a></li>
-          <li><a href="#">Stansted Airport Transfer</a></li>
-          <li><a href="#">Luton Airport Transfer</a></li>
-          <li><a href="#">London City Airport Transfer</a></li>
-          <li><a href="#">South End Airport Transfer</a></li>
-        </ul>
-      </div>
+    <section class="copyright">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+                <li><a href="#"><i class="fab fa-tripadvisor"></i></a> </li>
+            </ul>
+        </div>
     </section>
     <!--=========================
-  	 footer part end
+  	 footer bottom end
 ===========================-->
 
     <!--=========================
   	 sidebar start
 ===========================-->
     <sectionn class="sideMenu">
-      <div class="menu_bar">
-        <button id="close_menu"><i class="fas fa-times"></i></button>
+        <div class="menu_bar">
+            <button id="close_menu"><i class="fas fa-times"></i></button>
 
-        <ul>
-          <li><a href="#">Airport Transfers</a></li>
-          <li><a href="#">London Tours</a></li>
-          <li><a href="#">Business Accounts</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+            <ul>
+                <li><a href="#">Airport Transfers</a></li>
+                <li><a href="#">London Tours</a></li>
+                <li><a href="#">Business Accounts</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+         <div class="sign_up_part">
+            <div class="container sup">
+
+                <div class="close_sup"><i class="fas fa-times"></i></div>
+
+                <div class="row justify-content-center align-items-center flex-column">
+                    <div class="col-6">
+
+                        <div class="list-group flex-row" id="list-tab" role="tablist">
+
+                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home2" role="tab" aria-controls="home">Sign In</a>
+
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile2" role="tab" aria-controls="profile">Sign Up</a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-10">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-home2" role="tabpanel" aria-labelledby="list-home-list">
+
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">remember</label>
+                                        <a class="ml-lg-5" href="#">Forgot Password</a>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary sign_btn">Submit</button>
+                                </form>
+
+                            </div>
+
+
+                            <div class="tab-pane fade" id="list-profile2" role="tabpanel" aria-labelledby="list-profile-list">
+
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-6">
+                                            <input type="text" class="form-control" placeholder="First name">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="text" class="form-control" placeholder="Last name">
+                                        </div>
+                                        <div class="col-6 mt-4">
+                                            <input type="text" class="form-control" placeholder="Mobile Number">
+                                        </div>
+                                        <div class="col-6 mt-4">
+                                            <input type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                        <div class="col-6 mt-4">
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="col-6 mt-4">
+                                            <input type="password" class="form-control" placeholder="Confirm Password">
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="button" class="btn btn-primary mt-4 sign_btn">Sign Up</button>
+                                </form>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </sectionn>
 
     <!--=========================
   	 sidebar end
 ===========================-->
 
-<!--=========================
+    <!--=========================
   	 fixed vehicle info
 ===========================-->
-<div class="fixedinfo">
-    <div class="sub_cont">
-         <ul class="f_logo">
-            <li><i class="far fa-paper-plane"></i></li>
-            <li><i class="far fa-user"></i></li>
-            <li><i class="far fa-edit"></i></li>
-         </ul>
+    <div class="fixedinfo">
+        <div class="sub_cont">
+            <ul class="f_logo">
+                <li><i class="far fa-paper-plane"></i></li>
+                <li><i class="far fa-user"></i></li>
+                <li><i class="far fa-edit"></i></li>
+            </ul>
 
-         <ul class="f_text">
-            <li>
-              <span>£ 25</span>
-              <span>Promo Code</span>
-            </li>
-            <li>
-                <span class="time">14:54</span>
-            </li>
-         </ul>
+            <ul class="f_text">
+                <li>
+                    <span>£ 25</span>
+                    <span>Promo Code</span>
+                </li>
+                <li>
+                    <span class="time">14:54</span>
+                </li>
+            </ul>
+        </div>
+
     </div>
 
-</div>
-
     <!--necessary javascrpt files-->
-    <script
-      src="https://kit.fontawesome.com/5dae415ef9.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/5dae415ef9.js" crossorigin="anonymous"></script>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!--jquery.min.js is for dropdown selector-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.datepicker2.js"></script>
-    <script src="js/jquery.bselect.js"></script>
     <script src="js/venobox.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.datetimepicker.js"></script>
     <script src="js/custom.js"></script>
-  </body>
+</body>
+
 </html>
