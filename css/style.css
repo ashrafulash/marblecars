@@ -54,6 +54,10 @@ ol {
   padding: 0;
 }
 
+.clr{
+  clear: both;
+}
+
 .list-group-item:last-child {
   border-radius: 0;
 }
@@ -153,6 +157,14 @@ button:hover {
     transform: scale(1.5);
 }
 
+.perfect-datetimepicker table td.weekend{
+  color: #000;
+}
+
+.later_part{
+  padding-top: 15px;
+}
+
 #menu_btn {
   width: 50px;
   height: 50px;
@@ -194,7 +206,7 @@ button:hover {
   position: relative;
   left: 8px;
   margin: 0 auto;
-  transform: translateY(18px);
+  transform: translateY(14px);
   z-index: 99;
 }
 
@@ -324,7 +336,7 @@ button:hover {
 
 .datePicker{
     position: absolute;
-    width: 100%;
+    width: 365px;
     right: 0;
     top: 0;
     border-radius: 5px;
@@ -335,6 +347,33 @@ button:hover {
     box-shadow: 5px 0px 60px rgba(0, 0, 0, .1);
     display: none;
     
+}
+
+.datePickers{
+  position: absolute;
+  width: 365px;
+  right: 0;
+  top: 0;
+  border-radius: 5px;
+  background: #fff;
+  z-index: 99;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  box-shadow: 5px 0px 60px rgba(0, 0, 0, .1);
+  display: none;
+  
+}
+
+.datePickers .calender_time h3{
+  padding: 3px 0;
+}
+
+.pageTwo .calender_time h3{
+  padding: 3px 0;
+}
+
+.returnBook{
+  display: none;
 }
 
 
@@ -367,27 +406,30 @@ button:hover {
 .calender_time{
     padding: 4px 5px;
     box-sizing: border-box;
-    transform: translateY(-30px);
+    transform: translateY(-15px);
+    width: 100px;
+    float: right;
 }
 
 .calender_time ul li{
     text-align: center;
-    padding-bottom: 7px;
+    padding-bottom: 4px;
 }
 
 #hour_box,
 #minBox{
-    width: 40%;
+    width: 100%;
     border: 1px solid #ddd;
     margin-right: 5px;
-    padding: 10px;
-    font-size: 22px;
+    padding: 5px;
+    font-size: 20px;
     border-radius: 5px;
     background: #eee;
 }
 
-.date-text2{
-        height: 1px;
+#date-text2,
+#date-text3{
+    height: 1px;
     background: green;
     position: absolute;
     opacity: 0;
@@ -395,12 +437,29 @@ button:hover {
     bottom: 0;
 }
 
+
 #demo2{
     transform: translateY(-39px);
+    width: 260px;
+    float: left;
+    z-index: 999;
+    margin-top: 24px;
+}
+
+#demo3{
+  transform: translateY(-39px);
+  width: 260px;
+  float: left;
+  z-index: 999;
+  margin-top: 24px;
+}
+
+.returnDate{
+  display: none;
 }
 
 .perfect-datetimepicker *{
-    line-height: 30px;
+    line-height: 26px;
 }
 .perfect-datetimepicker table td{
     border: 1px solid #ddd;
@@ -417,14 +476,17 @@ button:hover {
 
 
 .calender_time .d-flex button{
-    width: 29%;
+    width: 100%;
+    padding: 5px 0;
     background: transparent;
     border: 1px solid #ddd;
     background: #009FE3;
     color: #fff;
 }
 
-
+.calender_time .d-flex{
+  flex-direction: column;
+}
 
 #cancel_btn{
     background: #707070;
@@ -433,11 +495,23 @@ button:hover {
     color: #fff;
     border-radius: 5px;
     font-size: 18px;
-        margin-top: 29px;
 }
 #cancel_btn:hover{
     background: #FA4832;
 }
+
+#cancel_btns{
+  background: #707070;
+  border: 0;
+  padding: 6px 12px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+}
+#cancel_btns:hover{
+  background: #FA4832;
+}
+
 #ok_btn{
       background: #043F9A;
     border: 0;
@@ -445,12 +519,28 @@ button:hover {
     color: #fff;
     border-radius: 5px;
     font-size: 18px;
-        margin-top: 29px;
+}
+
+#ok_btns{
+  background: #043F9A;
+border: 0;
+padding: 6px 33px;
+color: #fff;
+border-radius: 5px;
+font-size: 18px;
 }
 .ok{
     opacity: 0;
     visibility: hidden;
 }
+
+.okCancel{
+  text-align: center;
+
+transform: translateY(-21px);
+}
+
+
 
 .mt{
     display: none !important;
@@ -491,6 +581,7 @@ button:hover {
   padding: 15px 45px;
   color: #222;
   font-style: italic;
+  text-align: left;
 }
 
 .fleet_part .list-group-item:nth-child(odd) {
@@ -852,11 +943,11 @@ button:hover {
   transform: translateY(-50%);
 }
 
-.footer_part .col-lg-4:last-child ul:after {
+.footer_part .col-lg-3:last-child ul:after {
   display: none;
 }
 
-.footer_part .col-md-4:last-child ul:after {
+.footer_part .col-md-3:last-child ul:after {
   display: none;
 }
 .footer_part ul li a {
@@ -978,7 +1069,7 @@ button:hover {
 ===================================*/
 .secondPage_left {
   background: #fafafa;
-  padding: 100px 0 80px 0;
+  padding: 60px 0 80px 0;
   font-family: "Open sans", sans-serif;
 }
 
@@ -1083,6 +1174,10 @@ button:hover {
   z-index: 999 !important;
 }
 
+.perfect-datetimepicker tbody td.today {
+  font-weight: bold;
+}
+
 #book_return {
   padding: 15px 25px;
   border-radius: 5px;
@@ -1091,6 +1186,7 @@ button:hover {
   font-size: 18px;
   background: #1fbfee;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 #book_return:hover {
@@ -1246,7 +1342,7 @@ button:hover {
   height: 600px;
   border: 1px solid #ddd;
   background: transparent;
-  transform: translate(39px, -130px);
+  transform: translate(39px, -117px);
   border-radius: 18px;
   z-index: -1;
   position: relative;
@@ -1398,7 +1494,7 @@ button:hover {
 .list_direction li h4{
   font-family: 'Open sans',sans-serif;
   color: #1fbfee;
-  font-size: 22px;
+  font-size: 20px;
   position: relative;
   z-index: 11;
 }
@@ -1410,12 +1506,12 @@ button:hover {
   height: 25px;
   text-align: center;
   line-height: 26px;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 50%;
   margin-right: 15px;
 }
 .list_direction p{
-  font-size: 18px;
+  font-size: 16px;
   color: #444;
   font-family: 'Open sans',sans-serif;
   margin-left: 41px;

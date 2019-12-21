@@ -7,6 +7,14 @@
     .header_top {
         text-align: center;
     }
+   
+    .datePicker{
+        right: -35px;
+    }
+    .secondPage_left .datePicker,
+    .secondPage_left .datePickers {
+        right: -16px;
+    }
 
     .header_top ul li:first-child {
         border-right: 0;
@@ -293,6 +301,7 @@
         display: none;
     }
 
+
     .secondPage_left {
         background: #fafafa;
         padding: 17px 0 80px 0;
@@ -328,6 +337,7 @@
         border-radius: 5px;
         padding: 12px;
         margin-top: 34px;
+        display: none;
     }
 
     .mini_map a.venobox {
@@ -392,6 +402,10 @@
 =============================== */
     .header_top {
         text-align: center;
+    }
+
+    .sideMap_partf{
+        display: none;
     }
 
     .header_top ul li:first-child {

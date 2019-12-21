@@ -30,10 +30,19 @@
     
          
          var datepickerBtn = $("#date_picker_input")
+         var returnPicker = $("#date_picker_input_return");
          
             datepickerBtn.click(function(){
-             $('.datePicker').fadeIn();
+                 $('.datePicker').fadeIn();
+                 $('.returnBook').fadeOut();
              })
+
+             returnPicker.click(function(){
+                $('.datePicker').fadeOut();
+                $('.returnBook').fadeIn();
+
+
+          })
     
             
             function logEvent(type, date) {
@@ -50,6 +59,15 @@
                 viewMode: 'YMD',
                 onDateChange: function(){
                     $('#date-text2').text(this.getText());
+                  
+                }
+            });
+
+            $('#demo3').datetimepicker({
+                date: new Date(),
+                viewMode: 'YMD',
+                onDateChange: function(){
+                    $('#date-text3').text(this.getText());
                   
                 }
             });
@@ -71,10 +89,15 @@
      var m_up = document.querySelector("#m_up");
      var m_down = document.querySelector("#m_down");
 
+
+
+
+
     dateBase = {
         hour: 0,
         minute: 0,
     }
+
 
     function displayDOM() {
 
@@ -82,6 +105,7 @@
         minBox.innerHTML  = dateBase.minute;
 
     }
+
 
    
 
@@ -98,7 +122,7 @@
 
         if (dateBase.hour > 0) {
             
-            dateBase.hour;
+            dateBase.hour--;
             displayDOM()
         }
     })
@@ -107,7 +131,7 @@
     
     m_up.addEventListener("click", function () {
 
-        if (dateBase.minute < 60) {
+        if (dateBase.minute < 55) {
             
             dateBase.minute = dateBase.minute + 5;
             displayDOM()
@@ -122,6 +146,8 @@
             displayDOM()
         }
     })
+
+
     
     $(".title").click(function(){
        
@@ -144,28 +170,113 @@
         
         var day = $(".selected").text();
         var mon = $(".title").text();
-        
-        var date = day+', '+mon+', '+dateBase.hour+':'+dateBase.minute;
-        
+
+        var dateTxt = $("#date-text2").text();
+        var dateArr = dateTxt.split(' ');        
+        var date = dateArr[0] + ', '+dateBase.hour+':'+dateBase.minute;
+       
         
         $("#date_picker_input").val(date)
   
-        $('.datePicker').fadeOut();
+            $('.datePicker').fadeOut();
           
-    })
+        })
+
+
+        $("#ok_btns").click(function(){
+        
+            var day = $(".selected").text();
+            var mon = $(".title").text();
+
+            var dateTxt = $("#date-text3").text();
+            var dateArr = dateTxt.split(' ');        
+            var date = dateArr[0] + ', '+dateBases.hour+':'+dateBases.minute;
+
+             
+            
+            $("#date_picker_input_return").val(date)
+      
+                $('.returnBook').fadeOut();
+              
+            })
+
     
     $("#cancel_btn").click(function(){
         $('.datePicker').fadeOut();
-    })
-    
-    
-    $("#asap_btn").click(function(){
         
-         $("#date_picker_input").val("ASAP")
-          $('.datePicker').fadeOut();
+    })
+
+    
+    $("#cancel_btns").click(function(){
+        $('.returnBook').fadeOut();
     })
     
     
+ // ===========================
+
+ $("#book_return").click(function () {
+      $(".returnDate").fadeIn();
+
+   })
+
+ var hourBoxs = document.querySelector("#hour_boxs");
+ var minBoxs = document.querySelector("#minBoxs")
+
+ var h_ups = document.querySelector("#h_ups");
+ var h_downs = document.querySelector("#h_downs");
+
+ var m_ups = document.querySelector("#m_ups");
+ var m_downs = document.querySelector("#m_downs");
+ 
+ dateBases = {
+     hour: 0,
+     minute: 0,
+ }
+
+ function displayDOMs() {
+
+     hourBoxs.innerHTML = dateBases.hour;
+     minBoxs.innerHTML  = dateBases.minute;
+
+ }
+
+ h_ups.addEventListener("click", function () {
+
+     if (dateBases.hour < 23) {
+         
+         dateBases.hour++;
+         displayDOMs()
+     }
+ })
+ 
+ h_downs.addEventListener("click", function () {
+
+     if (dateBases.hour > 0) {
+         
+         dateBases.hour--;
+         displayDOMs()
+     }
+ })
+ 
+ 
+ 
+ m_ups.addEventListener("click", function () {
+
+     if (dateBases.minute < 55) {
+         
+         dateBases.minute = dateBases.minute + 5;
+         displayDOMs()
+     }
+ })
+ 
+ m_downs.addEventListener("click", function () {
+
+     if (dateBases.minute > 0) {
+         
+         dateBases.minute = dateBases.minute - 5;
+         displayDOMs()
+     }
+ })
     
     
     

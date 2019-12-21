@@ -123,55 +123,47 @@
                                     <span class="location_icon last_border"><i class="flaticon-calendar"></i></span>
                                     <input id="date_picker_input" class="input_fields date_time" type="text" placeholder="Date &amp; Time">
 
-                                    <div class="datePicker">
-                                        <div class="choose">
-                                            <button type="button" id="asap_btn">ASAP</button>
-                                            <button type="button" id="later_btn">Later</button>
-                                        </div>
+                                    <div class="datePicker pageTwo">
                                         <div class="later_part">
-                             
-                                                 
-                                                       
-                                                <span id="date-text2"></span>
-                                                   
 
-                                                <div id="demo2"></div>
-                                                   
-                            
 
-                                                    <div class="calender_time">
 
-                                                        <ul>
-                                                            <h3>Hour</h3>
-                                                            <li class="d-flex">
-                                                               
-                                                              
-                                                                     <h4 id="hour_box">0</h4>
-                                                              
-                                                               
-                                                                 
-                                                                     <button id="h_up" type="button">Up</button>
-                                                                
-                                                                 <button id="h_down" type="button">Down</button>
-                                                               
-                                                            </li>
-                                                            
-                                                           <h3 class="mt-2">Minute</h3>
-                                                            <li class="d-flex">
-                                                              
-                                                               <h4 id="minBox">0</h4>
-                                                                <button id="m_up" type="button">Up</button>
-                                                                
-                                                                <button id="m_down" type="button">Down</button>
-                                                            </li>
-                                                            
-                                                            <li>
-                                                                <button id="ok_btn" type="button">Ok</button>
-                                                                <button id="cancel_btn" type="button">Cencel</button>
-                                                            </li>
-                                                        </ul>
+                                            <span id="date-text2"></span>
 
-                                                
+
+                                            <div id="demo2"></div>
+
+
+                                            <div class="calender_time">
+
+                                                <ul>
+                                                    <h3>Hour</h3>
+                                                    <li class="d-flex">
+
+                                                        <button id="h_up" type="button"><i class="fas fa-angle-up"></i></button>
+                                                          <h4 id="hour_box">0</h4>
+                                                        <button id="h_down" type="button"><i class="fas fa-angle-down"></i></button>
+
+                                                    </li>
+
+                                                    <h3 class="mt-2">Minute</h3>
+                                                    <li class="d-flex">
+
+                                                        
+                                                        <button id="m_up" type="button"><i class="fas fa-angle-up"></i></button>
+                                                        <h4 id="minBox">0</h4>
+                                                        <button id="m_down" type="button"><i class="fas fa-angle-down"></i></button>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                              <div class="clr"></div>
+                                            <div class="okCancel">
+                                              
+                                                    <button id="ok_btn" type="button">Ok</button>
+                                                    <button id="cancel_btn" type="button">Cencel</button>
+                                          
                                             </div>
                                         </div>
 
@@ -179,6 +171,9 @@
 
                                 </div>
                             </li>
+
+
+                           
                             <li class="col-lg-6">
                                 <div class="input_holder">
                                     <span class="location_icon"><i class="flaticon-sit-1"></i></span>
@@ -191,9 +186,62 @@
                                     <input class="input_fields" type="number" placeholder="Luggage" max="8" min="0">
                                 </div>
                             </li>
+                            <li class="col-lg-12 returnDate">
+                                <div class="input_holder">
+                                    <span class="location_icon last_border"><i class="flaticon-calendar"></i></span>
+                                <input id="date_picker_input_return" class="input_fields date_time" type="text" placeholder="Return Date &amp; Time">
+
+                                    <div class="datePickers returnBook">
+                                        <div class="later_part">
+
+
+
+                                            <span id="date-text3"></span>
+
+
+                                            <div id="demo3"></div>
+
+
+                                            <div class="calender_time">
+
+                                                <ul>
+                                                    <h3>Hour</h3>
+                                                    <li class="d-flex">
+
+                                                        <button id="h_ups" type="button"><i class="fas fa-angle-up"></i></button>
+                                                          <h4 id="hour_boxs">0</h4>
+                                                        <button id="h_downs" type="button"><i class="fas fa-angle-down"></i></button>
+
+                                                    </li>
+
+                                                    <h3 class="mt-2">Minute</h3>
+                                                    <li class="d-flex">
+
+                                                        
+                                                        <button id="m_ups" type="button"><i class="fas fa-angle-up"></i></button>
+                                                        <h4 id="minBoxs">0</h4>
+                                                        <button id="m_downs" type="button"><i class="fas fa-angle-down"></i></button>
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                              <div class="clr"></div>
+                                            <div class="okCancel">
+                                              
+                                                    <button id="ok_btns" type="button">Ok</button>
+                                                    <button id="cancel_btns" type="button">Cencel</button>
+                                          
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </li>
                         </ul>
 
-                        <a id="book_return" href="#">Book Return</a>
+                        <span id="book_return" href="#">Book Return</span>
                     </div>
                     </form> 
 
@@ -366,40 +414,50 @@
     <!--=========================
   		 footer start
 ===========================-->
-    <section class="footer_part">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-6 col-md-4">
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Customer Service</a></li>
-                        <li><a href="#">Terms &amp; Condtions</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-6 col-md-4">
-                    <ul>
-                        <li><a href="#">Service Areas</a></li>
-                        <li><a href="#">Airport Transfers</a></li>
-                        <li class="active"><a href="#">Cruise Transfers</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-6 col-md-4">
-
-                    <ul>
-                        <li><a href="#">Coach Hire</a></li>
-                        <li class="active"><a href="#">Group Transfers</a></li>
-                        <li><a href="#">City Tours</a></li>
-             
-                    </ul>
-                </div>
-
+<section class="footer_part">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-6 col-md-3">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Terms &amp; Condtions</a></li>
+                </ul>
             </div>
-        </div>
-    </section>
+            <div class="col-lg-3 col-6 col-md-3">
+                <ul>
+                    <li><a href="#">Service Areas</a></li>
+                    <li><a href="#">Airport Transfers</a></li>
+                    <li><a href="#">Cruise Transfers</a></li>
 
-    <!--=========================
-  		 footer end
+                </ul>
+            </div>
+            <div class="col-lg-3 col-6 col-md-3">
+
+                <ul>
+                    <li><a href="#">Coach Hire</a></li>
+                    <li><a href="#">Group Transfers</a></li>
+                    <li><a href="#">City Tours</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-6 col-md-3">
+
+                <ul>
+                    <li><a href="#">Business Account </a></li>
+                    <li><a href="#">Travel Agent</a></li>
+                    <li><a href="#">Suppliers</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--=========================
+       footer end
 ===========================-->
 
     <!--=========================

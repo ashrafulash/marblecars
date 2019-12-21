@@ -511,8 +511,10 @@
                         $cell.data('disabled', disabled);
                         if (!disabled) {
                             if (current_month && iday == day) {
+
                                 cache.selectedDate && cache.selectedDate.removeClass('selected');
-                                $cell.addClass('selected');
+
+                                
                                 cache.selectedDate = $cell;
                                 cache.showDay = iday;
                             }
@@ -849,6 +851,7 @@
                                     _loadDateData($datetable, today);
                                     _loadTimeData($timetable, today);
                                     cache.selectedDate && cache.selectedDate.removeClass('selected');
+                                    
                                     cache.selectedDate = $datetable.find('td.today').addClass('selected');
                                 }
                                 utilsApplyFunc(picker, options.onDateChange, _arguments);
