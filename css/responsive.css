@@ -293,6 +293,10 @@
         top: 120px;
     }
 
+    .fleet_sidebar{
+        padding-bottom: 0;
+    }
+
     /* =============================
      Second page Responsive 
      max-width:  575.98px 
@@ -687,6 +691,11 @@
         top: 90px;
     }
 
+    .fleet_sidebar{
+        padding-bottom: 0;
+    }
+
+
 
     /* =============================
      Second page Responsive 
@@ -879,6 +888,10 @@
     .list-group {
         flex-direction: row;
         flex-wrap: wrap;
+        width: 100%;
+    }
+    .fleet_sidebar{
+        padding-bottom: 0;
     }
 
     .fleet_part .list-group-item {
